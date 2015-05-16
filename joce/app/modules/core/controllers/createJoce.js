@@ -8,9 +8,8 @@
  */
 angular
     .module('core')
-    .controller('createJoceController', ['$scope', '$location',
-        function($scope, $location) {
-          /*$scope.joceId = null;*/
+    .controller('createJoceController', ['$scope', '$location', '$timeout',
+        function($scope, $location, $timeout) {
           $scope.submit = function () {
             var joce = {
               name:$scope.name,
@@ -26,8 +25,9 @@ angular
             });
             db.transaction(function (tx) {
               tx.executeSql("INSERT INTO joce (name, number, time, minumum, maximum) VALUES (?,?,?,?,?)",[joce.name, joce.number, joce.time, joce.minumum, joce.maximum], function (tx, results) {
-                /*$scope.joceId = results.insertId;*/
-                $location.path('/addJocex/'+results.insertId);
+                $timeout(function(){
+                  $location.path('/addJocex/'+results.insertId);
+                });
               });
             });
           };
