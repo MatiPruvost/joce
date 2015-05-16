@@ -44,7 +44,9 @@ angular
                 var jocexsDb = [];
                 var len = results.rows.length;
                 for (var i = 0; i < len; i++) {
-                  jocexsDb.push(results.rows.item(i))
+                  if (results.rows.item(i).joceId == $stateParams.joceId){
+                    jocexsDb.push(results.rows.item(i))
+                  }
                 }
                 $timeout(function(){
                   $scope.lastestJocex = jocexsDb[jocexsDb.length -1];
