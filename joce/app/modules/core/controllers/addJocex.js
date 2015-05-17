@@ -47,7 +47,14 @@ angular
                   jocexsDb.push(results.rows.item(i))
                 }
                 $timeout(function(){
-                  $scope.lastestJocex = jocexsDb[jocexsDb.length -1];
+                  if(jocexsDb[jocexsDb.length -1] === undefined){
+                    var jdb = {text:"There isn't any jocex for this joce"};
+                    $scope.lastestJocex = jdb;
+                  }
+                  else{
+                    console.log(jocexsDb[jocexsDb.length -1])
+                    $scope.lastestJocex = jocexsDb[jocexsDb.length -1];
+                  }
                 });
               }, null);
             });
