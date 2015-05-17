@@ -43,5 +43,11 @@ angular
                     templateUrl: 'modules/core/views/addJocex.html',
                     controller: 'addJocexController'
                 });
+            $stateProvider
+                .state('showJoce', {
+                    url: '/showJoce/:joceId',
+                    templateUrl: 'modules/core/views/showJoce.html',
+                    controller: 'showJoceController'
+                });
         }
     ]);
