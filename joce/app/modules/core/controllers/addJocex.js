@@ -40,13 +40,11 @@ angular
               tx.executeSql("CREATE TABLE IF NOT EXISTS jocex(id INTEGER PRIMARY KEY ASC, text TEXT, joceId TEXT)", []);
             });
             db.transaction(function (tx) {
-              tx.executeSql('SELECT * FROM jocex', [], function (tx, results) {
+              tx.executeSql('SELECT * FROM jocex WHERE joceId=?', [$stateParams.joceId], function (tx, results) {
                 var jocexsDb = [];
                 var len = results.rows.length;
                 for (var i = 0; i < len; i++) {
-                  if (results.rows.item(i).joceId == $stateParams.joceId){
-                    jocexsDb.push(results.rows.item(i))
-                  }
+                  jocexsDb.push(results.rows.item(i))
                 }
                 $timeout(function(){
                   $scope.lastestJocex = jocexsDb[jocexsDb.length -1];
