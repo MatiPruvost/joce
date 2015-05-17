@@ -18,8 +18,24 @@ angular
               text:$scope.jocex,
               joceId:$stateParams.joceId
             };
+            var number = null;
             var dbSize = 5 * 1024 * 1024; // 5Mb
             var db = window.openDatabase("joceTest", "1.0", "Joce Test DB", dbSize);
+            db.transaction(function (tx) {
+              tx.executeSql("CREATE TABLE IF NOT EXISTS joce(id INTEGER PRIMARY KEY ASC, name TEXT, number INT, time INT, minumum INT, maximum INT)", []);
+            });
+            db.transaction(function (tx) {
+              tx.executeSql('SELECT * FROM joce WHERE id=?', [$stateParams.joceId], function (tx, results) {
+                var joceDb = [];
+                var len = results.rows.length;
+                for (var i = 0; i < len; i++) {
+                  joceDb.push(results.rows.item(i))
+                }
+                $timeout(function(){
+                  number = joceDb[0].number
+                });
+              }, null);
+            });
             db.transaction(function (tx) {
               tx.executeSql("CREATE TABLE IF NOT EXISTS jocex(id INTEGER PRIMARY KEY ASC, text TEXT, joceId TEXT)", []);
             });
@@ -28,10 +44,23 @@ angular
               });
             });
             db.transaction(function (tx) {
-              tx.executeSql('SELECT * FROM joce', [], function (tx, results) {
+              tx.executeSql('SELECT * FROM jocex WHERE joceId=?', [$stateParams.joceId], function (tx, results) {
+              var jocexsDb = [];
+                var len = results.rows.length;
+                for (var i = 0; i < len; i++) {
+                  jocexsDb.push(results.rows.item(i))
+                }
+                $timeout(function(){
+                  if (jocexsDb.length == number){
+                    $location.path('/showJoce/'+$stateParams.joceId);
+                  }
+                  else{
+                    console.log(jocexsDb.length, number)
+                    $location.path('/home');
+                  }
+                });
               }, null);
             });
-            $location.path('/home');
           };
           function getJocexs (){
             var dbSize = 5 * 1024 * 1024; // 5Mb
@@ -52,7 +81,6 @@ angular
                     $scope.lastestJocex = jdb;
                   }
                   else{
-                    console.log(jocexsDb[jocexsDb.length -1])
                     $scope.lastestJocex = jocexsDb[jocexsDb.length -1];
                   }
                 });
