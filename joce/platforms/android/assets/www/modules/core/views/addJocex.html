@@ -1,0 +1,20 @@
+<div class="page-header">
+    <h1 id="home-h1">Add a jocex</h1>
+</div>
+
+<ul class="list-group">
+  <label>Lastest jocex</label>
+  <li class="list-group-item" ng-model="lastestJocex" id={{lastestJocex.id}} >{{lastestJocex.text}}</li>
+</ul>
+
+<form role="form" ng-submit="submit()">
+  <div class="form-group">
+    <label>Add a new jocex</label>
+    <input type="text" class="form-control" ng-model="jocex">
+  </div>
+  <button type="submit" class="btn btn-primary">Add joce</button>
+</form>
+
+<!-- <div class="page-footer">
+    <button ng-click="go('/createMica')" type="button" class="btn btn-primary">Crate a new joce</button>
+</div> -->
