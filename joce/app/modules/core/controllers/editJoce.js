@@ -39,6 +39,9 @@ angular
             });
             db.transaction(function (tx) {
               tx.executeSql('DELETE FROM joce WHERE id = ?', [$stateParams.joceId]);
+            });
+            db.transaction(function (tx) {
+              tx.executeSql('DELETE FROM jocex WHERE joceId = ?', [$stateParams.joceId]);
               $timeout(function(){
                 $location.path('/home');
               });
