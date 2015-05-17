@@ -38,16 +38,22 @@ angular
                     controller: 'createJoceController'
                 });
             $stateProvider
-                .state('addJocex', {
-                    url: '/addJocex/:joceId',
-                    templateUrl: 'modules/core/views/addJocex.html',
-                    controller: 'addJocexController'
-                });
-            $stateProvider
                 .state('showJoce', {
                     url: '/showJoce/:joceId',
                     templateUrl: 'modules/core/views/showJoce.html',
                     controller: 'showJoceController'
+                });
+            $stateProvider
+                .state('editJoce', {
+                    url: '/editJoce/:joceId',
+                    templateUrl: 'modules/core/views/editJoce.html',
+                    controller: 'editJoceController'
+                });
+            $stateProvider
+                .state('addJocex', {
+                    url: '/addJocex/:joceId',
+                    templateUrl: 'modules/core/views/addJocex.html',
+                    controller: 'addJocexController'
                 });
         }
     ]);

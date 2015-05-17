@@ -1,0 +1,29 @@
+<div class="page-header">
+    <h1 id="home-h1">Edit joce</h1>
+</div>
+
+<form role="form" ng-submit="submit()">
+  <div class="form-group">
+    <label>Name of joce</label>
+    <input type="text" class="form-control" ng-model="joce.name">
+  </div>
+  <div class="form-group">
+    <label>Number of jocex on joce</label>
+    <input type="number" class="form-control" ng-model="joce.number">
+  </div>
+  <div class="form-group">
+    <label>Days between jocex</label>
+    <input type="number" class="form-control" ng-model="joce.time">
+  </div>
+  <div class="form-group">
+    <label>Minimum words by jocex</label>
+    <input type="number" class="form-control" ng-model="joce.minumum">
+  </div>
+  <div class="form-group">
+    <label>Maximum words by jocex</label>
+    <input type="number" class="form-control" ng-model="joce.maximum">
+  </div>
+  <button type="submit" class="btn btn-primary">Update joce</button>
+</form>
+<br>
+<button type="submit" class="btn btn-danger" ng-click="remove()">Remove joce</button>
