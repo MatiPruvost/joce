@@ -44,7 +44,9 @@
 /home/vonlenska/repositories/me/joce/joce/platforms/android/assets/www/scripts/vendor.js \
 /home/vonlenska/repositories/me/joce/joce/platforms/android/assets/www/modules/core \
 /home/vonlenska/repositories/me/joce/joce/platforms/android/assets/www/modules/core/views \
+/home/vonlenska/repositories/me/joce/joce/platforms/android/assets/www/modules/core/views/showJoce.html \
 /home/vonlenska/repositories/me/joce/joce/platforms/android/assets/www/modules/core/views/home.html \
+/home/vonlenska/repositories/me/joce/joce/platforms/android/assets/www/modules/core/views/editJoce.html \
 /home/vonlenska/repositories/me/joce/joce/platforms/android/assets/www/modules/core/views/createJoce.html \
 /home/vonlenska/repositories/me/joce/joce/platforms/android/assets/www/modules/core/views/addJocex.html \
 /home/vonlenska/repositories/me/joce/joce/platforms/android/ant-build/AndroidManifest.xml \

@@ -68,6 +68,18 @@ angular
                     controller: 'createJoceController'
                 });
             $stateProvider
+                .state('showJoce', {
+                    url: '/showJoce/:joceId',
+                    templateUrl: 'modules/core/views/showJoce.html',
+                    controller: 'showJoceController'
+                });
+            $stateProvider
+                .state('editJoce', {
+                    url: '/editJoce/:joceId',
+                    templateUrl: 'modules/core/views/editJoce.html',
+                    controller: 'editJoceController'
+                });
+            $stateProvider
                 .state('addJocex', {
                     url: '/addJocex/:joceId',
                     templateUrl: 'modules/core/views/addJocex.html',
@@ -90,8 +102,24 @@ angular
               text:$scope.jocex,
               joceId:$stateParams.joceId
             };
+            var number = null;
             var dbSize = 5 * 1024 * 1024; // 5Mb
             var db = window.openDatabase("joceTest", "1.0", "Joce Test DB", dbSize);
+            db.transaction(function (tx) {
+              tx.executeSql("CREATE TABLE IF NOT EXISTS joce(id INTEGER PRIMARY KEY ASC, name TEXT, number INT, time INT, minumum INT, maximum INT)", []);
+            });
+            db.transaction(function (tx) {
+              tx.executeSql('SELECT * FROM joce WHERE id=?', [$stateParams.joceId], function (tx, results) {
+                var joceDb = [];
+                var len = results.rows.length;
+                for (var i = 0; i < len; i++) {
+                  joceDb.push(results.rows.item(i))
+                }
+                $timeout(function(){
+                  number = joceDb[0].number
+                });
+              }, null);
+            });
             db.transaction(function (tx) {
               tx.executeSql("CREATE TABLE IF NOT EXISTS jocex(id INTEGER PRIMARY KEY ASC, text TEXT, joceId TEXT)", []);
             });
@@ -100,10 +128,23 @@ angular
               });
             });
             db.transaction(function (tx) {
-              tx.executeSql('SELECT * FROM joce', [], function (tx, results) {
+              tx.executeSql('SELECT * FROM jocex WHERE joceId=?', [$stateParams.joceId], function (tx, results) {
+              var jocexsDb = [];
+                var len = results.rows.length;
+                for (var i = 0; i < len; i++) {
+                  jocexsDb.push(results.rows.item(i))
+                }
+                $timeout(function(){
+                  if (jocexsDb.length == number){
+                    $location.path('/showJoce/'+$stateParams.joceId);
+                  }
+                  else{
+                    console.log(jocexsDb.length, number)
+                    $location.path('/home');
+                  }
+                });
               }, null);
             });
-            $location.path('/home');
           };
           function getJocexs (){
             var dbSize = 5 * 1024 * 1024; // 5Mb
@@ -112,16 +153,20 @@ angular
               tx.executeSql("CREATE TABLE IF NOT EXISTS jocex(id INTEGER PRIMARY KEY ASC, text TEXT, joceId TEXT)", []);
             });
             db.transaction(function (tx) {
-              tx.executeSql('SELECT * FROM jocex', [], function (tx, results) {
+              tx.executeSql('SELECT * FROM jocex WHERE joceId=?', [$stateParams.joceId], function (tx, results) {
                 var jocexsDb = [];
                 var len = results.rows.length;
                 for (var i = 0; i < len; i++) {
-                  if (results.rows.item(i).joceId == $stateParams.joceId){
-                    jocexsDb.push(results.rows.item(i))
-                  }
+                  jocexsDb.push(results.rows.item(i))
                 }
                 $timeout(function(){
-                  $scope.lastestJocex = jocexsDb[jocexsDb.length -1];
+                  if(jocexsDb[jocexsDb.length -1] === undefined){
+                    var jdb = {text:"There isn't any jocex for this joce"};
+                    $scope.lastestJocex = jdb;
+                  }
+                  else{
+                    $scope.lastestJocex = jocexsDb[jocexsDb.length -1];
+                  }
                 });
               }, null);
             });
@@ -146,7 +191,7 @@ angular
             var dbSize = 5 * 1024 * 1024; // 5Mb
             var db = window.openDatabase("joceTest", "1.0", "Joce Test DB", dbSize);
             db.transaction(function (tx) {
-              tx.executeSql("CREATE TABLE IF NOT EXISTS joce(id INTEGER PRIMARY KEY ASC, name TEXT, number TEXT, time TEXT, minumum TEXT, maximum TEXT)", []);
+              tx.executeSql("CREATE TABLE IF NOT EXISTS joce(id INTEGER PRIMARY KEY ASC, name TEXT, number INT, time INT, minumum INT, maximum INT)", []);
             });
             db.transaction(function (tx) {
               tx.executeSql("INSERT INTO joce (name, number, time, minumum, maximum) VALUES (?,?,?,?,?)",[joce.name, joce.number, joce.time, joce.minumum, joce.maximum], function (tx, results) {
@@ -162,6 +207,71 @@ angular
 
 angular
     .module('core')
+    .controller('editJoceController', ['$scope', '$location', '$timeout', '$stateParams',
+        function($scope, $location, $timeout, $stateParams) {
+          $scope.submit = function () {
+            var joce = {
+              name:$scope.name,
+              number:$scope.number,
+              time:$scope.time,
+              minumum:$scope.minumum,
+              maximum:$scope.maximum
+            };
+            var dbSize = 5 * 1024 * 1024; // 5Mb
+            var db = window.openDatabase("joceTest", "1.0", "Joce Test DB", dbSize);
+            db.transaction(function (tx) {
+              tx.executeSql("CREATE TABLE IF NOT EXISTS joce(id INTEGER PRIMARY KEY ASC, name TEXT, number INT, time INT, minumum INT, maximum INT)", []);
+            });
+            db.transaction(function (tx) {
+              tx.executeSql("INSERT INTO joce (name, number, time, minumum, maximum) VALUES (?,?,?,?,?)",[joce.name, joce.number, joce.time, joce.minumum, joce.maximum], function (tx, results) {
+                $timeout(function(){
+                  $location.path('/addJocex/'+results.insertId);
+                });
+              });
+            });
+          };
+          $scope.remove = function () {
+            var dbSize = 5 * 1024 * 1024; // 5Mb
+            var db = window.openDatabase("joceTest", "1.0", "Joce Test DB", dbSize);
+            db.transaction(function (tx) {
+              tx.executeSql("CREATE TABLE IF NOT EXISTS joce(id INTEGER PRIMARY KEY ASC, name TEXT, number INT, time INT, minumum INT, maximum INT)", []);
+            });
+            db.transaction(function (tx) {
+              tx.executeSql('DELETE FROM joce WHERE id = ?', [$stateParams.joceId]);
+            });
+            db.transaction(function (tx) {
+              tx.executeSql('DELETE FROM jocex WHERE joceId = ?', [$stateParams.joceId]);
+              $timeout(function(){
+                $location.path('/home');
+              });
+            });
+          };
+          function getJoce(){
+            var dbSize = 5 * 1024 * 1024; // 5Mb
+            var db = window.openDatabase("joceTest", "1.0", "Joce Test DB", dbSize);
+            db.transaction(function (tx) {
+              tx.executeSql("CREATE TABLE IF NOT EXISTS joce(id INTEGER PRIMARY KEY ASC, name INT, number INT, time INT, minumum INT, maximum INT)", []);
+            });
+            db.transaction(function (tx) {
+              tx.executeSql('SELECT * FROM joce WHERE id=?', [$stateParams.joceId], function (tx, results) {
+                var joceDb = [];
+                var len = results.rows.length;
+                for (var i = 0; i < len; i++) {
+                  joceDb.push(results.rows.item(i))
+                }
+                $timeout(function(){
+                  $scope.joce = joceDb[0];
+                });
+              }, null);
+            });
+          };
+          getJoce();
+        }
+    ]);
+'use strict';
+
+angular
+    .module('core')
     .controller('HomeController', ['$scope', '$location', '$timeout',
         function($scope, $location, $timeout) {
           $scope.go = function (path) {
@@ -171,7 +281,7 @@ angular
             var dbSize = 5 * 1024 * 1024; // 5Mb
             var db = window.openDatabase("joceTest", "1.0", "Joce Test DB", dbSize);
             db.transaction(function (tx) {
-              tx.executeSql("CREATE TABLE IF NOT EXISTS joce(id INTEGER PRIMARY KEY ASC, name TEXT, number TEXT, time TEXT, minumum TEXT, maximum TEXT)", []);
+              tx.executeSql("CREATE TABLE IF NOT EXISTS joce(id INTEGER PRIMARY KEY ASC, name TEXT, number INT, time INT, minumum INT, maximum INT)", []);
             });
             db.transaction(function (tx) {
               tx.executeSql('SELECT * FROM joce', [], function (tx, results) {
@@ -182,6 +292,38 @@ angular
                 }
                 $timeout(function(){
                   $scope.joces = jocesDb;
+                });
+              }, null);
+            });
+          };
+          getJoces();
+        }
+    ]);
+
+'use strict';
+
+angular
+    .module('core')
+    .controller('showJoceController', ['$scope', '$location', '$stateParams', '$timeout',
+        function($scope, $location, $stateParams, $timeout) {
+          $scope.go = function (path) {
+            $location.path(path);
+          };
+          function getJoces (){
+            var dbSize = 5 * 1024 * 1024; // 5Mb
+            var db = window.openDatabase("joceTest", "1.0", "Joce Test DB", dbSize);
+            db.transaction(function (tx) {
+              tx.executeSql("CREATE TABLE IF NOT EXISTS joce(id INTEGER PRIMARY KEY ASC, name TEXT, number INT, time INT, minumum INT, maximum INT)", []);
+            });
+            db.transaction(function (tx) {
+              tx.executeSql('SELECT * FROM jocex WHERE joceId=?', [$stateParams.joceId], function (tx, results) {
+                var jocexsDb = [];
+                var len = results.rows.length;
+                for (var i = 0; i < len; i++) {
+                  jocexsDb.push(results.rows.item(i))
+                }
+                $timeout(function(){
+                  $scope.jocexs = jocexsDb;
                 });
               }, null);
             });
