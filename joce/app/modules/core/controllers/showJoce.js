@@ -17,7 +17,7 @@ angular
             var dbSize = 5 * 1024 * 1024; // 5Mb
             var db = window.openDatabase("joceTest", "1.0", "Joce Test DB", dbSize);
             db.transaction(function (tx) {
-              tx.executeSql("CREATE TABLE IF NOT EXISTS joce(id INTEGER PRIMARY KEY ASC, name TEXT, number INT, time INT, minumum INT, maximum INT)", []);
+              tx.executeSql("CREATE TABLE IF NOT EXISTS jocex(id INTEGER PRIMARY KEY ASC, text TEXT, joceId TEXT, timeStamp TIMESTAMP)", []);
             });
             db.transaction(function (tx) {
               tx.executeSql('SELECT * FROM jocex WHERE joceId=?', [$stateParams.joceId], function (tx, results) {

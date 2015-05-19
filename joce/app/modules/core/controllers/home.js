@@ -21,6 +21,9 @@ angular
             });
             db.transaction(function (tx) {
               tx.executeSql('SELECT * FROM joce', [], function (tx, results) {
+                var date = new Date(new Date().toUTCString());
+                date = date.toISOString();
+                console.log(date)
                 var jocesDb = [];
                 var len = results.rows.length;
                 for (var i = 0; i < len; i++) {
