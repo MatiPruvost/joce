@@ -17,17 +17,33 @@ angular
             var dbSize = 5 * 1024 * 1024; // 5Mb
             var db = window.openDatabase("joceTest", "1.0", "Joce Test DB", dbSize);
             db.transaction(function (tx) {
-              tx.executeSql("CREATE TABLE IF NOT EXISTS joce(id INTEGER PRIMARY KEY ASC, name TEXT, number INT, time INT, minumum INT, maximum INT)", []);
+              tx.executeSql("CREATE TABLE IF NOT EXISTS joce(id INTEGER PRIMARY KEY ASC, name TEXT, number INT, time INT, minumum INT, maximum INT, finished TEXT DEFAULT 'false', until TIMESTAMP)", []);
             });
             db.transaction(function (tx) {
               tx.executeSql('SELECT * FROM joce', [], function (tx, results) {
-                var date = new Date(new Date().toUTCString());
-                date = date.toISOString();
-                console.log(date)
+                /*var date = new Date(new Date().toUTCString());
+                date = date.toISOString();*/
                 var jocesDb = [];
                 var len = results.rows.length;
                 for (var i = 0; i < len; i++) {
-                  jocesDb.push(results.rows.item(i))
+                  jocesDb.push(results.rows.item(i));
+                  var now = new Date();
+                  var until = new Date(jocesDb[i].until);
+                  if (jocesDb[i].finished == "true"){
+                    jocesDb[i].updateable = false;
+                    jocesDb[i].waiting = false;
+                    jocesDb[i].url = "showJoce";
+                  }
+                  else if (now >= until){
+                    jocesDb[i].updateable = true;
+                    jocesDb[i].waiting = false;
+                    jocesDb[i].url = "addJocex";
+                  }
+                  else{
+                    jocesDb[i].updateable = false;
+                    jocesDb[i].waiting = true;
+                    jocesDb[i].url = "addJocex";
+                  }
                 }
                 $timeout(function(){
                   $scope.joces = jocesDb;
