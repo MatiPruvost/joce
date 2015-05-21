@@ -10,9 +10,9 @@
 <form role="form" ng-submit="submit()">
   <div class="form-group">
     <label>Add a new jocex</label>
-    <input type="text" class="form-control" ng-model="jocex">
+    <input type="text" ng-disabled="disabled" class="form-control" ng-model="jocex">
   </div>
-  <button type="submit" class="btn btn-primary">Add joce</button>
+  <button type="submit" ng-disabled="disabled" class="btn btn-primary">Add jocex</button>
 </form>
 
 <!-- <div class="page-footer">
