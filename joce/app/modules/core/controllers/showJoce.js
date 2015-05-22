@@ -8,8 +8,28 @@
  */
 angular
     .module('core')
-    .controller('showJoceController', ['$scope', '$location', '$stateParams', '$timeout',
-        function($scope, $location, $stateParams, $timeout) {
+    .controller('showJoceController', ['$scope', '$location', '$stateParams', '$timeout', '$cordovaSocialSharing',
+        function($scope, $location, $stateParams, $timeout, $cordovaSocialSharing) {
+          $scope.shareAnywhere = function() {
+            var dbSize = 5 * 1024 * 1024; // 5Mb
+            var db = window.openDatabase("joceTest", "1.0", "Joce Test DB", dbSize);
+            db.transaction(function (tx) {
+              tx.executeSql("CREATE TABLE IF NOT EXISTS jocex(id INTEGER PRIMARY KEY ASC, text TEXT, joceId TEXT, timeStamp TIMESTAMP)", []);
+            });
+            db.transaction(function (tx) {
+              tx.executeSql('SELECT * FROM jocex WHERE joceId=?', [$stateParams.joceId], function (tx, results) {
+                var jocexsTextDb = [];
+                var len = results.rows.length;
+                for (var i = 0; i < len; i++) {
+                  jocexsTextDb.push(results.rows.item(i).text)
+                }
+                $timeout(function(){
+                  var text = jocexsTextDb.join(" ");
+                  $cordovaSocialSharing.share(text, "This is your joce finished");
+                });
+              }, null);
+            });
+          }
           $scope.go = function (path) {
             $location.path(path);
           };

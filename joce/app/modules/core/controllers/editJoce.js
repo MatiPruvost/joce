@@ -14,19 +14,17 @@ angular
             var joce = {
               name:$scope.name,
               number:$scope.number,
-              time:$scope.time,
-              minumum:$scope.minumum,
-              maximum:$scope.maximum
+              time:$scope.time
             };
             var dbSize = 5 * 1024 * 1024; // 5Mb
             var db = window.openDatabase("joceTest", "1.0", "Joce Test DB", dbSize);
             db.transaction(function (tx) {
-              tx.executeSql("CREATE TABLE IF NOT EXISTS joce(id INTEGER PRIMARY KEY ASC, name TEXT, number INT, time INT, minumum INT, maximum INT, finished TEXT DEFAULT 'false', until TIMESTAMP)", []);
+              tx.executeSql("CREATE TABLE IF NOT EXISTS joce(id INTEGER PRIMARY KEY ASC, name TEXT, number INT, time INT, finished TEXT DEFAULT 'false', until TIMESTAMP)", []);
             });
             db.transaction(function (tx) {
-              tx.executeSql("INSERT INTO joce (name, number, time, minumum, maximum) VALUES (?,?,?,?,?)",[joce.name, joce.number, joce.time, joce.minumum, joce.maximum], function (tx, results) {
+              tx.executeSql('UPDATE joce SET name=?, number=?, time=? WHERE id=?', [joce.name, joce.number, joce.time, $stateParams.joceId], function (tx, results) {
                 $timeout(function(){
-                  $location.path('/addJocex/'+results.insertId);
+                  $location.path('/home');
                 });
               });
             });
@@ -35,7 +33,7 @@ angular
             var dbSize = 5 * 1024 * 1024; // 5Mb
             var db = window.openDatabase("joceTest", "1.0", "Joce Test DB", dbSize);
             db.transaction(function (tx) {
-              tx.executeSql("CREATE TABLE IF NOT EXISTS joce(id INTEGER PRIMARY KEY ASC, name TEXT, number INT, time INT, minumum INT, maximum INT, finished TEXT DEFAULT 'false', until TIMESTAMP)", []);
+              tx.executeSql("CREATE TABLE IF NOT EXISTS joce(id INTEGER PRIMARY KEY ASC, name TEXT, number INT, time INT, finished TEXT DEFAULT 'false', until TIMESTAMP)", []);
             });
             db.transaction(function (tx) {
               tx.executeSql('DELETE FROM joce WHERE id = ?', [$stateParams.joceId]);
@@ -51,7 +49,7 @@ angular
             var dbSize = 5 * 1024 * 1024; // 5Mb
             var db = window.openDatabase("joceTest", "1.0", "Joce Test DB", dbSize);
             db.transaction(function (tx) {
-              tx.executeSql("CREATE TABLE IF NOT EXISTS joce(id INTEGER PRIMARY KEY ASC, name INT, number INT, time INT, minumum INT, maximum INT, finished TEXT DEFAULT 'false', until TIMESTAMP)", []);
+              tx.executeSql("CREATE TABLE IF NOT EXISTS joce(id INTEGER PRIMARY KEY ASC, name INT, number INT, time INT, finished TEXT DEFAULT 'false', until TIMESTAMP)", []);
             });
             db.transaction(function (tx) {
               tx.executeSql('SELECT * FROM joce WHERE id=?', [$stateParams.joceId], function (tx, results) {
@@ -61,7 +59,9 @@ angular
                   joceDb.push(results.rows.item(i))
                 }
                 $timeout(function(){
-                  $scope.joce = joceDb[0];
+                  $scope.name = joceDb[0].name;
+                  $scope.number = joceDb[0].number;
+                  $scope.time = joceDb[0].time;
                 });
               }, null);
             });

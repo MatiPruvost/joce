@@ -8,7 +8,7 @@
  * @description Defines the routes and other config within the core module
  */
 angular
-    .module('core')
+    .module('core', ['ngCordova'])
     .config(['$stateProvider',
         '$urlRouterProvider',
         function($stateProvider, $urlRouterProvider) {
