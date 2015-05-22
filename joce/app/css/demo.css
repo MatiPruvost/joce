@@ -9,8 +9,9 @@ body {
     opacity: 0;
 }
 
+/*Remove red border*/
 .ng-invalid {
-    border: 1px solid red !important;
+    /*border: 1px solid red !important;*/
 }
 
 section {
