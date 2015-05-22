@@ -5,6 +5,9 @@
     <feature name="App">
         <param name="android-package" value="org.apache.cordova.App" />
     </feature>
+    <feature name="SocialSharing">
+        <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+    </feature>
     <name>Joce</name>
     <description>
     </description>

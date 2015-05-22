@@ -36,6 +36,7 @@
 /home/vonlenska/repositories/me/joce/joce/platforms/android/assets/www/scripts \
 /home/vonlenska/repositories/me/joce/joce/platforms/android/assets/www/cordova_plugins.js \
 /home/vonlenska/repositories/me/joce/joce/platforms/android/assets/www/modules \
+/home/vonlenska/repositories/me/joce/joce/platforms/android/assets/www/plugins \
 /home/vonlenska/repositories/me/joce/joce/platforms/android/assets/www/styles/vendor.css \
 /home/vonlenska/repositories/me/joce/joce/platforms/android/assets/www/styles/custom.css \
 /home/vonlenska/repositories/me/joce/joce/platforms/android/assets/www/img/loaders \
@@ -49,4 +50,7 @@
 /home/vonlenska/repositories/me/joce/joce/platforms/android/assets/www/modules/core/views/editJoce.html \
 /home/vonlenska/repositories/me/joce/joce/platforms/android/assets/www/modules/core/views/createJoce.html \
 /home/vonlenska/repositories/me/joce/joce/platforms/android/assets/www/modules/core/views/addJocex.html \
+/home/vonlenska/repositories/me/joce/joce/platforms/android/assets/www/plugins/nl.x-services.plugins.socialsharing \
+/home/vonlenska/repositories/me/joce/joce/platforms/android/assets/www/plugins/nl.x-services.plugins.socialsharing/www \
+/home/vonlenska/repositories/me/joce/joce/platforms/android/assets/www/plugins/nl.x-services.plugins.socialsharing/www/SocialSharing.js \
 /home/vonlenska/repositories/me/joce/joce/platforms/android/ant-build/AndroidManifest.xml \
