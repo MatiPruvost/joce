@@ -1,8 +1,8 @@
-<div class="page-header">
-    <h1 id="home-h1">Your joces</h1>
+<div class="page-header col-xs-12 col-sm-8 col-sm-offset-2 text-center">
+  <h1 id="home-h1">Your joces</h1>
 </div>
 
-<div class="panel panel-default">
+<div class="panel panel-default col-xs-12 col-sm-8 col-sm-offset-2">
   <table class="table table-hover">
     <tbody>
       <tr ng-model="joces" ng-repeat="joce in joces" id={{joce.id}} >
@@ -22,6 +22,6 @@
   </table>
 </div>
 
-<div class="page-footer">
-    <button ng-click="go('/createJoce')" type="button" class="btn btn-primary">Crate a new joce</button>
+<div class="page-footer col-xs-12 col-sm-8 col-sm-offset-2">
+    <button ng-click="go('/createJoce')" type="button" class="btn btn-primary btn-block">Crate a new joce</button>
 </div>
