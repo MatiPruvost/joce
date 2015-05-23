@@ -33,16 +33,19 @@ angular
                     jocesDb[i].updateable = false;
                     jocesDb[i].waiting = false;
                     jocesDb[i].url = "showJoce";
+                    jocesDb[i].disabled = true;
                   }
                   else if (now >= until){
                     jocesDb[i].updateable = true;
                     jocesDb[i].waiting = false;
                     jocesDb[i].url = "addJocex";
+                    jocesDb[i].disabled = false;
                   }
                   else{
                     jocesDb[i].updateable = false;
                     jocesDb[i].waiting = true;
                     jocesDb[i].url = "addJocex";
+                    jocesDb[i].disabled = false;                    
                   }
                 }
                 $timeout(function(){

@@ -16,7 +16,7 @@
             <span class="badge alert-success" ng-show="{{joce.finished}}" >Finished</span>
             <span class="badge alert-warning" ng-show="{{joce.waiting}}" >Waiting</span>
             <span class="badge alert-info" ng-show="{{joce.updateable}}" >Updateable</span>
-            <button class="btn btn-xs" ng-click="go('/editJoce/{{joce.id}}')">
+            <button class="btn btn-xs" ng-click="go('/editJoce/{{joce.id}}')" ng-disabled="{{joce.disabled}}">
               <span class="glyphicon glyphicon-cog"></span>
             </button>
           </td>
