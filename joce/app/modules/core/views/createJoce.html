@@ -1,8 +1,8 @@
-<div class="page-header">
+<div class="page-header col-xs-12 col-sm-8 col-sm-offset-2 text-center">
     <h1 id="home-h1">Create a joce</h1>
 </div>
 
-<form role="form" ng-submit="submit()">
+<form role="form" ng-submit="submit()" class="col-xs-12 col-sm-8 col-sm-offset-2 text-center">
   <div class="form-group">
     <label>Name of joce</label>
     <input type="text" class="form-control" ng-model="name" required>
@@ -15,5 +15,5 @@
     <label>Days between jocex</label>
     <input type="number" class="form-control" ng-model="time" required>
   </div>
-  <button type="submit" class="btn btn-primary">Create joce</button>
+  <button type="submit" class="btn btn-primary btn-block">Create joce</button>
 </form>
