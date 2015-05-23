@@ -1,23 +1,29 @@
-<div class="page-header">
+<div class="row"> 
+  <div class="page-header col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 text-center">
     <h1 id="home-h1">Edit joce</h1>
+  </div>
 </div>
 
-<form role="form" ng-submit="submit()">
-  <div class="form-group">
-    <label>Name of joce</label>
-    <input type="text" class="form-control" ng-model="name">
-  </div>
-  <div class="form-group">
-    <label>Number of jocex on joce</label>
-    <input type="number" class="form-control" ng-model="number">
-  </div>
-  <div class="form-group">
-    <label>Days between jocex</label>
-    <input type="number" class="form-control" ng-model="time">
-  </div>
-  <button type="submit" class="btn btn-primary">Update joce</button>
-</form>
+<div class="row"> 
+  <form role="form" ng-submit="submit()" class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 text-center">
+    <div class="form-group">
+      <label>Name of joce</label>
+      <input type="text" class="form-control" ng-model="name">
+    </div>
+    <div class="form-group">
+      <label>Number of jocex on joce</label>
+      <input type="number" class="form-control" ng-model="number">
+    </div>
+    <div class="form-group">
+      <label>Days between jocex</label>
+      <input type="number" class="form-control" ng-model="time">
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Update joce</button>
+  </form>
+</div>
 
-<br>
-
-<button type="submit" class="btn btn-danger" ng-click="remove()">Remove joce</button>
+<div class="row"> 
+  <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+    <button type="submit" class="btn btn-danger btn-block" ng-click="remove()">Remove joce</button>
+  </div>
+</div>
