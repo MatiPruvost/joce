@@ -1,0 +1,17 @@
+<md-subheader class="md-primary">Create a joce</md-subheader>
+
+<form name="jocexForm" ng-submit="submit()">
+  <md-input-container>
+    <label>Name of joce</label>
+    <input md-maxlength="15" required name="description" ng-model="name">
+  </md-input-container>
+  <md-input-container>
+    <label>Number of jocex on joce</label>
+    <input required type="number" ng-model="number">
+  </md-input-container>
+  <md-input-container>
+    <label>Days between jocex</label>
+    <input required type="number" ng-model="time">
+  </md-input-container>
+  <md-button type="submit" class="md-raised md-primary">Create joce</md-button>
+</form>
