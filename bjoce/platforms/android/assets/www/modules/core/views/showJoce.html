@@ -1,0 +1,19 @@
+<div class="row"> 
+	<div class="page-header col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 text-center">
+	    <h1 id="home-h1">Your joce finished</h1>
+	</div>
+</div>
+
+<div class="row"> 
+  <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+		<ul class="list-group">
+		  <li class="list-group-item" ng-model="jocexs" ng-repeat="jocex in jocexs" id="{{jocex.id}}">{{jocex.text}}</li>
+		</ul>
+	</div>
+</div>
+
+<div class="row"> 
+	<div class="page-footer col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+	    <button ng-click="shareAnywhere()" type="button" class="btn btn-primary btn-block">Share anywhere</button>
+	</div>
+</div>

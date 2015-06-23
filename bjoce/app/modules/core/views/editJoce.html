@@ -1,0 +1,33 @@
+<div class="row"> 
+  <div class="page-header col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 text-center">
+    <h1 id="home-h1">Edit joce</h1>
+  </div>
+</div>
+
+<div class="row"> 
+<div class="alert alert-info alert-dismissible col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2" role="alert" ng-show="alertShow">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  You can not edit thi joce because it was finished
+</div>
+</div>
+
+<div class="row"> 
+  <form role="form" ng-submit="submit()" class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+    <div class="form-group">
+      <label>Name of joce</label>
+      <input type="text" class="form-control" ng-model="name" ng-disabled="disabled">
+    </div>
+    <div class="form-group">
+      <label>Number of jocex on joce</label>
+      <input type="number" class="form-control" ng-model="number" ng-disabled="disabled">
+    </div>
+    <div class="form-group">
+      <label>Days between jocex</label>
+      <input type="number" class="form-control" ng-model="time" ng-disabled="disabled">
+    </div>
+    <button type="submit" class="btn btn-primary btn-block" ng-disabled="disabled">Update joce</button>
+    <button class="btn btn-danger btn-block" ng-click="remove()">Remove joce</button>
+  </form>
+</div>
