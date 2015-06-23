@@ -7,8 +7,8 @@
 <div ng-model="jocexs" ng-repeat="jocex in jocexs" id={{jocex.id}}>
   <md-list-item>
     <p>{{jocex.text}}</p>
+    <md-divider ng-if="!$last"></md-divider>
   </md-list-item>
 </div>
-<md-button ng-click="shareAnywhere()" class="md-fab md-mini md-primary" aria-label="Share anywhere">
-  <md-icon md-svg-src="img/icons/share-variant.svg"></md-icon>
-</md-button>
+
+<md-button type="submit" class="md-raised md-primary" ng-click="shareAnywhere()">Share anywhere</md-button>
