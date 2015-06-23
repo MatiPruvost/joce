@@ -47,11 +47,24 @@ ApplicationConfiguration.registerModule('core');
 
 'use strict';
 
+
+/*angular.module('core', ['ngMaterial'])
+.config(function($mdThemingProvider) {
+  $mdThemingProvider.theme('default')
+    .primaryPalette('pink')
+    .accentPalette('orange');
+});*/
+
 angular
-    .module('core', ['ngCordova'])
+    .module('core', ['ngCordova', 'ngMaterial'])
     .config(['$stateProvider',
         '$urlRouterProvider',
-        function($stateProvider, $urlRouterProvider) {
+        '$mdThemingProvider',
+        function($stateProvider, $urlRouterProvider, $mdThemingProvider) {
+
+            $mdThemingProvider.theme('default')
+                .primaryPalette('deep-purple')
+                .accentPalette('purple')
 
             $urlRouterProvider.otherwise('/');
 
@@ -92,8 +105,8 @@ angular
 
 angular
     .module('core')
-    .controller('addJocexController', ['$scope', '$location', '$stateParams', '$timeout',
-        function($scope, $location, $stateParams, $timeout) {
+    .controller('addJocexController', ['$scope', '$location', '$stateParams', '$timeout', '$mdDialog',
+        function($scope, $location, $stateParams, $timeout, $mdDialog) {
           $scope.go = function (path) {
             $location.path(path);
           };
@@ -217,6 +230,15 @@ angular
                       $scope.disabled = true;
                       $scope.alertShow = true;
                       $scope.alerMessage = text;
+                      $mdDialog.show(
+                        $mdDialog.alert()
+                          .parent(angular.element(document.body))
+                          .title('You have to wait..')
+                          .content(text)
+                          .ariaLabel('Alert Dialog Demo')
+                          .ok('Ok')
+                          .targetEvent()
+                      );
                     }
                     else{
                       $scope.alertShow = false;
@@ -262,8 +284,8 @@ angular
 
 angular
     .module('core')
-    .controller('editJoceController', ['$scope', '$location', '$timeout', '$stateParams',
-        function($scope, $location, $timeout, $stateParams) {
+    .controller('editJoceController', ['$scope', '$location', '$timeout', '$stateParams', '$mdDialog',
+        function($scope, $location, $timeout, $stateParams, $mdDialog) {
           $scope.submit = function () {
             var joce = {
               name:$scope.name,
@@ -319,6 +341,15 @@ angular
                   if (joceDb[0].finished == "true"){
                     $scope.disabled = true;
                     $scope.alertShow = true;
+                    $mdDialog.show(
+                        $mdDialog.alert()
+                          .parent(angular.element(document.body))
+                          .title('You have to wait..')
+                          .content('You can not edit thi joce because it was finished')
+                          .ariaLabel('Alert Dialog Demo')
+                          .ok('Ok')
+                          .targetEvent()
+                      );
                   }
                   else{
                     $scope.disabled = false;
