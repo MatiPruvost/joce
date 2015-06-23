@@ -1,10 +1,10 @@
-<!-- <md-toolbar class="md-warn">
+<md-toolbar class="md-accent">
   <div class="md-toolbar-tools">
     <h2 class="md-flex">Your joces</h2>
   </div>
-</md-toolbar> -->
+</md-toolbar>
 
-<md-subheader class="md-primary">Your joces</md-subheader>
+<!-- <md-subheader class="md-primary">Your joces</md-subheader> -->
 
 <div ng-model="joces" ng-repeat="joce in joces" id={{joce.id}}>
   <md-list-item ng-click="go('/{{joce.url}}/{{joce.id}}')">

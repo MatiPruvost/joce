@@ -1,19 +1,14 @@
-<div class="row"> 
-	<div class="page-header col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 text-center">
-	    <h1 id="home-h1">Your joce finished</h1>
-	</div>
-</div>
+<md-toolbar class="md-accent">
+  <div class="md-toolbar-tools">
+    <h2 class="md-flex">Your joce finished</h2>
+  </div>
+</md-toolbar>
 
-<div class="row"> 
-  <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-		<ul class="list-group">
-		  <li class="list-group-item" ng-model="jocexs" ng-repeat="jocex in jocexs" id="{{jocex.id}}">{{jocex.text}}</li>
-		</ul>
-	</div>
+<div ng-model="jocexs" ng-repeat="jocex in jocexs" id={{jocex.id}}>
+  <md-list-item>
+    <p>{{jocex.text}}</p>
+  </md-list-item>
 </div>
-
-<div class="row"> 
-	<div class="page-footer col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-	    <button ng-click="shareAnywhere()" type="button" class="btn btn-primary btn-block">Share anywhere</button>
-	</div>
-</div>
+<md-button ng-click="shareAnywhere()" class="md-fab md-mini md-primary" aria-label="Share anywhere">
+  <md-icon md-svg-src="img/icons/share-variant.svg"></md-icon>
+</md-button>

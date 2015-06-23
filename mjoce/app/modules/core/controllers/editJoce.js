@@ -8,8 +8,8 @@
  */
 angular
     .module('core')
-    .controller('editJoceController', ['$scope', '$location', '$timeout', '$stateParams',
-        function($scope, $location, $timeout, $stateParams) {
+    .controller('editJoceController', ['$scope', '$location', '$timeout', '$stateParams', '$mdDialog',
+        function($scope, $location, $timeout, $stateParams, $mdDialog) {
           $scope.submit = function () {
             var joce = {
               name:$scope.name,
@@ -65,6 +65,15 @@ angular
                   if (joceDb[0].finished == "true"){
                     $scope.disabled = true;
                     $scope.alertShow = true;
+                    $mdDialog.show(
+                        $mdDialog.alert()
+                          .parent(angular.element(document.body))
+                          .title('You have to wait..')
+                          .content('You can not edit thi joce because it was finished')
+                          .ariaLabel('Alert Dialog Demo')
+                          .ok('Ok')
+                          .targetEvent()
+                      );
                   }
                   else{
                     $scope.disabled = false;

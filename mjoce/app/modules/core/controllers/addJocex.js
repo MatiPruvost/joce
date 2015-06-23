@@ -8,8 +8,8 @@
  */
 angular
     .module('core')
-    .controller('addJocexController', ['$scope', '$location', '$stateParams', '$timeout',
-        function($scope, $location, $stateParams, $timeout) {
+    .controller('addJocexController', ['$scope', '$location', '$stateParams', '$timeout', '$mdDialog',
+        function($scope, $location, $stateParams, $timeout, $mdDialog) {
           $scope.go = function (path) {
             $location.path(path);
           };
@@ -137,6 +137,15 @@ angular
                       $scope.alertShow = true;
                       $scope.alerMessage = text;
                       // alert(text);
+                      $mdDialog.show(
+                        $mdDialog.alert()
+                          .parent(angular.element(document.body))
+                          .title('You have to wait..')
+                          .content(text)
+                          .ariaLabel('Alert Dialog Demo')
+                          .ok('Ok')
+                          .targetEvent()
+                      );
                     }
                     else{
                       $scope.alertShow = false;

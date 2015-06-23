@@ -1,9 +1,15 @@
-<md-subheader class="md-primary">Create a joce</md-subheader>
+<md-toolbar class="md-accent">
+  <div class="md-toolbar-tools">
+    <h2 class="md-flex">Create a joce</h2>
+  </div>
+</md-toolbar>
+
+<!-- <md-subheader class="md-primary">Create a joce</md-subheader> -->
 
 <form name="jocexForm" ng-submit="submit()">
   <md-input-container>
     <label>Name of joce</label>
-    <input md-maxlength="15" required name="description" ng-model="name">
+    <input md-maxlength="15" required ng-model="name">
   </md-input-container>
   <md-input-container>
     <label>Number of jocex on joce</label>

@@ -24,7 +24,7 @@ angular
 
             $mdThemingProvider.theme('default')
                 .primaryPalette('deep-purple')
-                .accentPalette('orange')
+                .accentPalette('purple')
 
             $urlRouterProvider.otherwise('/');
 
