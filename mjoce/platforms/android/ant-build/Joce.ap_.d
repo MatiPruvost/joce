@@ -46,6 +46,7 @@
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/icons/settings.svg \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/icons/share-variant.svg \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/icons/ic_view_headline_48px.svg \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/icons/menu.svg \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/scripts/custom.js \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/scripts/vendor.js \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core \

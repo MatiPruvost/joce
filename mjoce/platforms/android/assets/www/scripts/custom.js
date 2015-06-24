@@ -366,8 +366,19 @@ angular
 
 angular
     .module('core')
-    .controller('HomeController', ['$scope', '$location', '$timeout',
-        function($scope, $location, $timeout) {
+    .controller('HomeController', ['$scope', '$location', '$timeout', '$mdSidenav', '$mdUtil',
+        function($scope, $location, $timeout, $mdSidenav, $mdUtil) {
+          $scope.toggleLeft = buildToggler('left');
+          function buildToggler(navID) {
+            var debounceFn =  $mdUtil.debounce(function(){
+                  $mdSidenav(navID)
+                    .toggle()
+                    .then(function () {
+                      $log.debug("toggle " + navID + " is done");
+                    });
+                },300);
+            return debounceFn;
+          }
           $scope.go = function (path) {
             $location.path(path);
           };
