@@ -8,8 +8,32 @@
  */
 angular
     .module('core')
-    .controller('HomeController', ['$scope', '$location', '$timeout', '$mdSidenav', '$mdUtil',
-        function($scope, $location, $timeout, $mdSidenav, $mdUtil) {
+    .controller('HomeController', ['$scope', '$location', '$timeout', '$mdSidenav', '$mdUtil','$mdToast',
+        function($scope, $location, $timeout, $mdSidenav, $mdUtil, $mdToast) {
+          $scope.showUpdateableToast = function() {
+            $mdToast.show(
+              $mdToast.simple()
+                .content('You can add a new Jocex')
+                .position('top right')
+                .hideDelay(3000)
+            );
+          };
+          $scope.showWaitToast = function() {
+            $mdToast.show(
+              $mdToast.simple()
+                .content('You need wait for add a new Jocex')
+                .position('top right')
+                .hideDelay(3000)
+            );
+          };
+          $scope.showFinishedToast = function() {
+            $mdToast.show(
+              $mdToast.simple()
+                .content('You already was finished this Joce')
+                .position('top right')
+                .hideDelay(3000)
+            );
+          };
           $scope.toggleLeft = buildToggler('left');
           function buildToggler(navID) {
             var debounceFn =  $mdUtil.debounce(function(){
