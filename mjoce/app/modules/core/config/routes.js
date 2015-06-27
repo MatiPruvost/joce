@@ -68,5 +68,23 @@ angular
                     templateUrl: 'modules/core/views/addJocex.html',
                     controller: 'addJocexController'
                 });
+            $stateProvider
+                .state('tutorial', {
+                    url: '/tutorial',
+                    templateUrl: 'modules/core/views/tutorial.html',
+                    controller: 'tutorialController'
+                });
+            $stateProvider
+                .state('about', {
+                    url: '/about',
+                    templateUrl: 'modules/core/views/about.html',
+                    controller: 'aboutController'
+                });
+            $stateProvider
+                .state('shareApp', {
+                    url: '/shareApp',
+                    templateUrl: 'modules/core/views/shareApp.html',
+                    controller: 'shareAppController'
+                });
         }
     ]);

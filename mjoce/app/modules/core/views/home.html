@@ -7,12 +7,7 @@
 <div ng-model="joces" ng-repeat="joce in joces" id={{joce.id}}>
   <md-list-item ng-click="go('/{{joce.url}}/{{joce.id}}')">
     <p>{{joce.name}}</p>
-    <!-- <span class="badge alert-success" ng-show="{{joce.finished}}" >Finished</span>
-    <span class="badge alert-warning" ng-show="{{joce.waiting}}" >Waiting</span>
-    <span class="badge alert-info" ng-show="{{joce.updateable}}" >Updateable</span> -->
-    <md-icon md-svg-src="img/icons/plus-circle-outline.svg" ng-show="{{joce.updateable}}" style="color: #673AB7;" ng-click="showUpdateableToast(); $event.stopPropagation()"></md-icon>
-    <md-icon md-svg-src="img/icons/clock.svg" ng-show="{{joce.waiting}}" style="color: #673AB7;" ng-click="showWaitToast(); $event.stopPropagation()">></md-icon>
-    <md-icon md-svg-src="img/icons/checkbox-marked-circle.svg" ng-show="{{joce.finished}}" style="color: #673AB7;" ng-click="showFinishedToast(); $event.stopPropagation()">></md-icon>
+    <md-icon md-svg-src="{{joce.src}}" style="color: #673AB7;" ng-click="{{joce.click}}"></md-icon>
     <md-icon md-svg-src="img/icons/settings.svg" ng-click="go('/editJoce/{{joce.id}}'); $event.stopPropagation()" ng-disabled="{{joce.disabled}}" style="color: #673AB7;"></md-icon>
     <md-divider ng-if="!$last"></md-divider>
   </md-list-item>

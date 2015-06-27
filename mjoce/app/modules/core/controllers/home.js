@@ -38,10 +38,7 @@ angular
           function buildToggler(navID) {
             var debounceFn =  $mdUtil.debounce(function(){
                   $mdSidenav(navID)
-                    .toggle()
-                    .then(function () {
-                      $log.debug("toggle " + navID + " is done");
-                    });
+                    .toggle();
                 },300);
             return debounceFn;
           }
@@ -56,8 +53,6 @@ angular
             });
             db.transaction(function (tx) {
               tx.executeSql('SELECT * FROM joce', [], function (tx, results) {
-                /*var date = new Date(new Date().toUTCString());
-                date = date.toISOString();*/
                 var jocesDb = [];
                 var len = results.rows.length;
                 for (var i = 0; i < len; i++) {
@@ -65,22 +60,19 @@ angular
                   var now = new Date();
                   var until = new Date(jocesDb[i].until);
                   if (jocesDb[i].finished == "true"){
-                    jocesDb[i].updateable = false;
-                    jocesDb[i].waiting = false;
+                    jocesDb[i].src = "img/icons/checkbox-marked-circle.svg";
+                    jocesDb[i].click = "showFinishedToast(); $event.stopPropagation()";
                     jocesDb[i].url = "showJoce";
-                    // jocesDb[i].disabled = true;
                   }
                   else if (now >= until){
-                    jocesDb[i].updateable = true;
-                    jocesDb[i].waiting = false;
+                    jocesDb[i].src = "img/icons/plus-circle-outline.svg";
+                    jocesDb[i].click = "showUpdateableToast(); $event.stopPropagation()";
                     jocesDb[i].url = "addJocex";
-                    // jocesDb[i].disabled = false;
                   }
                   else{
-                    jocesDb[i].updateable = false;
-                    jocesDb[i].waiting = true;
+                    jocesDb[i].src = "img/icons/clock.svg";
+                    jocesDb[i].click = "showWaitToast(); $event.stopPropagation()";
                     jocesDb[i].url = "addJocex";
-                    // jocesDb[i].disabled = false;                    
                   }
                 }
                 $timeout(function(){
