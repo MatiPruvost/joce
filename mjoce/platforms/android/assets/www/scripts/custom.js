@@ -98,6 +98,24 @@ angular
                     templateUrl: 'modules/core/views/addJocex.html',
                     controller: 'addJocexController'
                 });
+            $stateProvider
+                .state('tutorial', {
+                    url: '/tutorial',
+                    templateUrl: 'modules/core/views/tutorial.html',
+                    controller: 'tutorialController'
+                });
+            $stateProvider
+                .state('about', {
+                    url: '/about',
+                    templateUrl: 'modules/core/views/about.html',
+                    controller: 'aboutController'
+                });
+            $stateProvider
+                .state('shareApp', {
+                    url: '/shareApp',
+                    templateUrl: 'modules/core/views/shareApp.html',
+                    controller: 'shareAppController'
+                });
         }
     ]);
 
@@ -366,16 +384,37 @@ angular
 
 angular
     .module('core')
-    .controller('HomeController', ['$scope', '$location', '$timeout', '$mdSidenav', '$mdUtil',
-        function($scope, $location, $timeout, $mdSidenav, $mdUtil) {
+    .controller('HomeController', ['$scope', '$location', '$timeout', '$mdSidenav', '$mdUtil','$mdToast',
+        function($scope, $location, $timeout, $mdSidenav, $mdUtil, $mdToast) {
+          $scope.showUpdateableToast = function() {
+            $mdToast.show(
+              $mdToast.simple()
+                .content('You can add a new Jocex')
+                .position('top right')
+                .hideDelay(3000)
+            );
+          };
+          $scope.showWaitToast = function() {
+            $mdToast.show(
+              $mdToast.simple()
+                .content('You need wait for add a new Jocex')
+                .position('top right')
+                .hideDelay(3000)
+            );
+          };
+          $scope.showFinishedToast = function() {
+            $mdToast.show(
+              $mdToast.simple()
+                .content('You already was finished this Joce')
+                .position('top right')
+                .hideDelay(3000)
+            );
+          };
           $scope.toggleLeft = buildToggler('left');
           function buildToggler(navID) {
             var debounceFn =  $mdUtil.debounce(function(){
                   $mdSidenav(navID)
-                    .toggle()
-                    .then(function () {
-                      $log.debug("toggle " + navID + " is done");
-                    });
+                    .toggle();
                 },300);
             return debounceFn;
           }
@@ -390,8 +429,6 @@ angular
             });
             db.transaction(function (tx) {
               tx.executeSql('SELECT * FROM joce', [], function (tx, results) {
-                /*var date = new Date(new Date().toUTCString());
-                date = date.toISOString();*/
                 var jocesDb = [];
                 var len = results.rows.length;
                 for (var i = 0; i < len; i++) {
@@ -399,18 +436,18 @@ angular
                   var now = new Date();
                   var until = new Date(jocesDb[i].until);
                   if (jocesDb[i].finished == "true"){
-                    jocesDb[i].updateable = false;
-                    jocesDb[i].waiting = false;
+                    jocesDb[i].src = "img/icons/checkbox-marked-circle.svg";
+                    jocesDb[i].click = "showFinishedToast(); $event.stopPropagation()";
                     jocesDb[i].url = "showJoce";
                   }
                   else if (now >= until){
-                    jocesDb[i].updateable = true;
-                    jocesDb[i].waiting = false;
+                    jocesDb[i].src = "img/icons/plus-circle-outline.svg";
+                    jocesDb[i].click = "showUpdateableToast(); $event.stopPropagation()";
                     jocesDb[i].url = "addJocex";
                   }
                   else{
-                    jocesDb[i].updateable = false;
-                    jocesDb[i].waiting = true;
+                    jocesDb[i].src = "img/icons/clock.svg";
+                    jocesDb[i].click = "showWaitToast(); $event.stopPropagation()";
                     jocesDb[i].url = "addJocex";
                   }
                 }
