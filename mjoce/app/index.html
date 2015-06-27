@@ -8,7 +8,6 @@
 
     <!-- build:css styles/vendor.css -->
         <!-- injector:bowercss -->
-        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="lib/angular-material/angular-material.css">
         <!-- endinjector -->
     <!-- endbuild -->
@@ -24,8 +23,8 @@
 
   <body>
 
-    <div ng-controller="HomeController" layout="column" layout-fill>
-      <md-toolbar>
+    <div ng-controller="HomeController">
+      <md-toolbar class='md-medium-tall'>
         <div class="md-toolbar-tools">
           <md-button class="md-icon-button" aria-label="Settings">
             <md-icon ng-click="toggleLeft()" md-svg-icon="img/icons/menu.svg"></md-icon>
@@ -56,8 +55,7 @@
         </md-content>
       </md-sidenav>
 
-      <md-content layout-padding flex>
-          <section id="uiview" ui-view></section>
+      <md-content ui-view layout="column">
       </md-content>
 
     </div>
