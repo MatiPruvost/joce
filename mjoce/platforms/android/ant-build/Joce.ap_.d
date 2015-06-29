@@ -60,10 +60,14 @@
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views/createJoce.html \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views/addJocex.html \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/fonts/glyphicons-halflings-regular.ttf \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/fonts/glyphicons-halflings-regular.woff2 \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/fonts/glyphicons-halflings-regular.eot \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/fonts/glyphicons-halflings-regular.svg \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/fonts/glyphicons-halflings-regular.woff \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/plugins/nl.x-services.plugins.socialsharing \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/plugins/cordova-plugin-splashscreen \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/plugins/nl.x-services.plugins.socialsharing/www \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/plugins/nl.x-services.plugins.socialsharing/www/SocialSharing.js \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/plugins/cordova-plugin-splashscreen/www \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/plugins/cordova-plugin-splashscreen/www/splashscreen.js \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/ant-build/AndroidManifest.xml \

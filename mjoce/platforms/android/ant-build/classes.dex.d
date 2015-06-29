@@ -6,6 +6,16 @@
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/ant-build/classes/nl/xservices/plugins/SocialSharing$2.class \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/ant-build/classes/nl/xservices/plugins/SocialSharing$2$1.class \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/ant-build/classes/nl/xservices/plugins/SocialSharing$1.class \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen.class \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$6$1.class \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$3.class \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$4.class \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$5$1.class \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$2.class \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$1.class \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$6.class \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$7.class \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$5.class \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/ant-build/classes/com/joce/R$string.class \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/ant-build/classes/com/joce/R$xml.class \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/ant-build/classes/com/joce/R$attr.class \
