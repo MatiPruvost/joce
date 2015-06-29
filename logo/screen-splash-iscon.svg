@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg4049"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="screen-splash-iscon.svg">
+  <defs
+     id="defs4051" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-573.30335"
+     inkscape:cy="-344.03736"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4054">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g4099"
+       transform="translate(-393.29087,922.463)"
+       inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-xhdpi/icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         transform="matrix(0.05953488,0,0,0.05953488,360.94352,-444.44291)"
+         d="m -3768.75,11896.112 c 0,445.28 -360.9704,806.25 -806.25,806.25 -445.2796,0 -806.25,-360.97 -806.25,-806.25 0,-445.279 360.9704,-806.25 806.25,-806.25 445.2796,0 806.25,360.971 806.25,806.25 z"
+         sodipodi:ry="806.25"
+         sodipodi:rx="806.25"
+         sodipodi:cy="11896.112"
+         sodipodi:cx="-4575"
+         id="path4911-5-2-7"
+         style="fill:#323232;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <g
+         id="g5188-0-5"
+         transform="matrix(0.032,0,0,0.032,383.71087,112.50369)">
+        <rect
+           style="fill:#311b92;fill-opacity:1;stroke:none"
+           id="rect4875-2-1-6-3-0"
+           width="1000.0001"
+           height="1050.4812"
+           x="-11469.599"
+           y="4651.9897"
+           transform="matrix(1,0,0.30627002,0.95194468,0,0)" />
+        <rect
+           style="fill:#673ab7;fill-opacity:1;stroke:none"
+           id="rect4877-9-4-7-6"
+           width="1000"
+           height="1200.7159"
+           x="-9723.1143"
+           y="4227.7207" />
+        <rect
+           style="fill:#311b92;fill-opacity:1;stroke:none"
+           id="rect4875-2-1-61-1"
+           width="1000.0001"
+           height="1050.4812"
+           x="-11083.301"
+           y="4441.1411"
+           transform="matrix(1,0,0.30627002,0.95194468,0,0)" />
+        <rect
+           style="fill:#673ab7;fill-opacity:1;stroke:none"
+           id="rect4873-5-7-6-8"
+           width="1000.001"
+           height="1200.7159"
+           x="-9401.3848"
+           y="4027.0039" />
+      </g>
+    </g>
+    <g
+       id="g4099-0"
+       transform="matrix(0.75000005,0,0,0.75000005,-226.00517,1014.6964)"
+       inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-hdpi/icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         transform="matrix(0.05953488,0,0,0.05953488,360.94352,-444.44291)"
+         d="m -3768.75,11896.112 c 0,445.28 -360.9704,806.25 -806.25,806.25 -445.2796,0 -806.25,-360.97 -806.25,-806.25 0,-445.279 360.9704,-806.25 806.25,-806.25 445.2796,0 806.25,360.971 806.25,806.25 z"
+         sodipodi:ry="806.25"
+         sodipodi:rx="806.25"
+         sodipodi:cy="11896.112"
+         sodipodi:cx="-4575"
+         id="path4911-5-2-7-7"
+         style="fill:#323232;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <g
+         id="g5188-0-5-4"
+         transform="matrix(0.032,0,0,0.032,383.71087,112.50369)">
+        <rect
+           style="fill:#311b92;fill-opacity:1;stroke:none"
+           id="rect4875-2-1-6-3-0-7"
+           width="1000.0001"
+           height="1050.4812"
+           x="-11469.599"
+           y="4651.9897"
+           transform="matrix(1,0,0.30627002,0.95194468,0,0)" />
+        <rect
+           style="fill:#673ab7;fill-opacity:1;stroke:none"
+           id="rect4877-9-4-7-6-6"
+           width="1000"
+           height="1200.7159"
+           x="-9723.1143"
+           y="4227.7207" />
+        <rect
+           style="fill:#311b92;fill-opacity:1;stroke:none"
+           id="rect4875-2-1-61-1-6"
+           width="1000.0001"
+           height="1050.4812"
+           x="-11083.301"
+           y="4441.1411"
+           transform="matrix(1,0,0.30627002,0.95194468,0,0)" />
+        <rect
+           style="fill:#673ab7;fill-opacity:1;stroke:none"
+           id="rect4873-5-7-6-8-5"
+           width="1000.001"
+           height="1200.7159"
+           x="-9401.3848"
+           y="4027.0039" />
+      </g>
+    </g>
+    <g
+       id="g4794"
+       transform="translate(-85.714286,-11.428571)">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-land-hdpi/screen.png"
+         y="254.64792"
+         x="-376.57144"
+         height="480"
+         width="800"
+         id="rect4162"
+         style="fill:#f5f5f5;fill-opacity:1;stroke:none" />
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-land-hdpi/screen.png"
+         transform="matrix(2.5000002,0,0,2.5000002,-198.00006,-164.82891)"
+         id="g4099-3">
+        <path
+           sodipodi:type="arc"
+           style="fill:#323232;fill-opacity:1;stroke:none"
+           id="path4911-5-2-7-0"
+           sodipodi:cx="-4575"
+           sodipodi:cy="11896.112"
+           sodipodi:rx="806.25"
+           sodipodi:ry="806.25"
+           d="m -3768.75,11896.112 c 0,445.28 -360.9704,806.25 -806.25,806.25 -445.2796,0 -806.25,-360.97 -806.25,-806.25 0,-445.279 360.9704,-806.25 806.25,-806.25 445.2796,0 806.25,360.971 806.25,806.25 z"
+           transform="matrix(0.05953488,0,0,0.05953488,360.94352,-444.44291)" />
+        <g
+           transform="matrix(0.032,0,0,0.032,383.71087,112.50369)"
+           id="g5188-0-5-7">
+          <rect
+             transform="matrix(1,0,0.30627002,0.95194468,0,0)"
+             y="4651.9897"
+             x="-11469.599"
+             height="1050.4812"
+             width="1000.0001"
+             id="rect4875-2-1-6-3-0-9"
+             style="fill:#311b92;fill-opacity:1;stroke:none" />
+          <rect
+             y="4227.7207"
+             x="-9723.1143"
+             height="1200.7159"
+             width="1000"
+             id="rect4877-9-4-7-6-8"
+             style="fill:#673ab7;fill-opacity:1;stroke:none" />
+          <rect
+             transform="matrix(1,0,0.30627002,0.95194468,0,0)"
+             y="4441.1411"
+             x="-11083.301"
+             height="1050.4812"
+             width="1000.0001"
+             id="rect4875-2-1-61-1-4"
+             style="fill:#311b92;fill-opacity:1;stroke:none" />
+          <rect
+             y="4027.0039"
+             x="-9401.3848"
+             height="1200.7159"
+             width="1000.001"
+             id="rect4873-5-7-6-8-9"
+             style="fill:#673ab7;fill-opacity:1;stroke:none" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g4804"
+       inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-land-ldpi/screen.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-land-hdpi/screen.png"
+         y="528.64789"
+         x="456.28571"
+         height="200"
+         width="320"
+         id="rect4162-8"
+         style="fill:#f5f5f5;fill-opacity:1;stroke:none" />
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-land-hdpi/screen.png"
+         transform="matrix(1.0416667,0,0,1.0416667,524.02379,353.86587)"
+         id="g4099-3-3">
+        <path
+           sodipodi:type="arc"
+           style="fill:#323232;fill-opacity:1;stroke:none"
+           id="path4911-5-2-7-0-0"
+           sodipodi:cx="-4575"
+           sodipodi:cy="11896.112"
+           sodipodi:rx="806.25"
+           sodipodi:ry="806.25"
+           d="m -3768.75,11896.112 c 0,445.28 -360.9704,806.25 -806.25,806.25 -445.2796,0 -806.25,-360.97 -806.25,-806.25 0,-445.279 360.9704,-806.25 806.25,-806.25 445.2796,0 806.25,360.971 806.25,806.25 z"
+           transform="matrix(0.05953488,0,0,0.05953488,360.94352,-444.44291)" />
+        <g
+           transform="matrix(0.032,0,0,0.032,383.71087,112.50369)"
+           id="g5188-0-5-7-3">
+          <rect
+             transform="matrix(1,0,0.30627002,0.95194468,0,0)"
+             y="4651.9897"
+             x="-11469.599"
+             height="1050.4812"
+             width="1000.0001"
+             id="rect4875-2-1-6-3-0-9-0"
+             style="fill:#311b92;fill-opacity:1;stroke:none" />
+          <rect
+             y="4227.7207"
+             x="-9723.1143"
+             height="1200.7159"
+             width="1000"
+             id="rect4877-9-4-7-6-8-6"
+             style="fill:#673ab7;fill-opacity:1;stroke:none" />
+          <rect
+             transform="matrix(1,0,0.30627002,0.95194468,0,0)"
+             y="4441.1411"
+             x="-11083.301"
+             height="1050.4812"
+             width="1000.0001"
+             id="rect4875-2-1-61-1-4-4"
+             style="fill:#311b92;fill-opacity:1;stroke:none" />
+          <rect
+             y="4027.0039"
+             x="-9401.3848"
+             height="1200.7159"
+             width="1000.001"
+             id="rect4873-5-7-6-8-9-7"
+             style="fill:#673ab7;fill-opacity:1;stroke:none" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g4906"
+       inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-land-mdpi/screen.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-land-hdpi/screen.png"
+         y="403.21933"
+         x="845.14282"
+         height="320"
+         width="480"
+         id="rect4162-5"
+         style="fill:#f5f5f5;fill-opacity:1;stroke:none" />
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-land-hdpi/screen.png"
+         transform="matrix(1.6666668,0,0,1.6666668,937.52375,123.56811)"
+         id="g4099-3-6">
+        <path
+           sodipodi:type="arc"
+           style="fill:#323232;fill-opacity:1;stroke:none"
+           id="path4911-5-2-7-0-4"
+           sodipodi:cx="-4575"
+           sodipodi:cy="11896.112"
+           sodipodi:rx="806.25"
+           sodipodi:ry="806.25"
+           d="m -3768.75,11896.112 c 0,445.28 -360.9704,806.25 -806.25,806.25 -445.2796,0 -806.25,-360.97 -806.25,-806.25 0,-445.279 360.9704,-806.25 806.25,-806.25 445.2796,0 806.25,360.971 806.25,806.25 z"
+           transform="matrix(0.05953488,0,0,0.05953488,360.94352,-444.44291)" />
+        <g
+           transform="matrix(0.032,0,0,0.032,383.71087,112.50369)"
+           id="g5188-0-5-7-5">
+          <rect
+             transform="matrix(1,0,0.30627002,0.95194468,0,0)"
+             y="4651.9897"
+             x="-11469.599"
+             height="1050.4812"
+             width="1000.0001"
+             id="rect4875-2-1-6-3-0-9-4"
+             style="fill:#311b92;fill-opacity:1;stroke:none" />
+          <rect
+             y="4227.7207"
+             x="-9723.1143"
+             height="1200.7159"
+             width="1000"
+             id="rect4877-9-4-7-6-8-7"
+             style="fill:#673ab7;fill-opacity:1;stroke:none" />
+          <rect
+             transform="matrix(1,0,0.30627002,0.95194468,0,0)"
+             y="4441.1411"
+             x="-11083.301"
+             height="1050.4812"
+             width="1000.0001"
+             id="rect4875-2-1-61-1-4-3"
+             style="fill:#311b92;fill-opacity:1;stroke:none" />
+          <rect
+             y="4027.0039"
+             x="-9401.3848"
+             height="1200.7159"
+             width="1000.001"
+             id="rect4873-5-7-6-8-9-5"
+             style="fill:#673ab7;fill-opacity:1;stroke:none" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g4966"
+       inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-land-xhdpi/screen.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-land-hdpi/screen.png"
+         y="-16.209167"
+         x="1402.8572"
+         height="720"
+         width="1280"
+         id="rect4162-5-8"
+         style="fill:#f5f5f5;fill-opacity:1;stroke:none" />
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-land-hdpi/screen.png"
+         transform="matrix(3.7500002,0,0,3.7500002,1710.7142,-645.42438)"
+         id="g4099-3-6-1">
+        <path
+           sodipodi:type="arc"
+           style="fill:#323232;fill-opacity:1;stroke:none"
+           id="path4911-5-2-7-0-4-8"
+           sodipodi:cx="-4575"
+           sodipodi:cy="11896.112"
+           sodipodi:rx="806.25"
+           sodipodi:ry="806.25"
+           d="m -3768.75,11896.112 c 0,445.28 -360.9704,806.25 -806.25,806.25 -445.2796,0 -806.25,-360.97 -806.25,-806.25 0,-445.279 360.9704,-806.25 806.25,-806.25 445.2796,0 806.25,360.971 806.25,806.25 z"
+           transform="matrix(0.05953488,0,0,0.05953488,360.94352,-444.44291)" />
+        <g
+           transform="matrix(0.032,0,0,0.032,383.71087,112.50369)"
+           id="g5188-0-5-7-5-8">
+          <rect
+             transform="matrix(1,0,0.30627002,0.95194468,0,0)"
+             y="4651.9897"
+             x="-11469.599"
+             height="1050.4812"
+             width="1000.0001"
+             id="rect4875-2-1-6-3-0-9-4-1"
+             style="fill:#311b92;fill-opacity:1;stroke:none" />
+          <rect
+             y="4227.7207"
+             x="-9723.1143"
+             height="1200.7159"
+             width="1000"
+             id="rect4877-9-4-7-6-8-7-1"
+             style="fill:#673ab7;fill-opacity:1;stroke:none" />
+          <rect
+             transform="matrix(1,0,0.30627002,0.95194468,0,0)"
+             y="4441.1411"
+             x="-11083.301"
+             height="1050.4812"
+             width="1000.0001"
+             id="rect4875-2-1-61-1-4-3-8"
+             style="fill:#311b92;fill-opacity:1;stroke:none" />
+          <rect
+             y="4027.0039"
+             x="-9401.3848"
+             height="1200.7159"
+             width="1000.001"
+             id="rect4873-5-7-6-8-9-5-4"
+             style="fill:#673ab7;fill-opacity:1;stroke:none" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g4099-0-3"
+       transform="matrix(0.37500002,0,0,0.37500002,-61.214293,1120.0121)"
+       inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-ldpi/icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         transform="matrix(0.05953488,0,0,0.05953488,360.94352,-444.44291)"
+         d="m -3768.75,11896.112 c 0,445.28 -360.9704,806.25 -806.25,806.25 -445.2796,0 -806.25,-360.97 -806.25,-806.25 0,-445.279 360.9704,-806.25 806.25,-806.25 445.2796,0 806.25,360.971 806.25,806.25 z"
+         sodipodi:ry="806.25"
+         sodipodi:rx="806.25"
+         sodipodi:cy="11896.112"
+         sodipodi:cx="-4575"
+         id="path4911-5-2-7-7-6"
+         style="fill:#323232;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <g
+         id="g5188-0-5-4-8"
+         transform="matrix(0.032,0,0,0.032,383.71087,112.50369)">
+        <rect
+           style="fill:#311b92;fill-opacity:1;stroke:none"
+           id="rect4875-2-1-6-3-0-7-2"
+           width="1000.0001"
+           height="1050.4812"
+           x="-11469.599"
+           y="4651.9897"
+           transform="matrix(1,0,0.30627002,0.95194468,0,0)" />
+        <rect
+           style="fill:#673ab7;fill-opacity:1;stroke:none"
+           id="rect4877-9-4-7-6-6-7"
+           width="1000"
+           height="1200.7159"
+           x="-9723.1143"
+           y="4227.7207" />
+        <rect
+           style="fill:#311b92;fill-opacity:1;stroke:none"
+           id="rect4875-2-1-61-1-6-3"
+           width="1000.0001"
+           height="1050.4812"
+           x="-11083.301"
+           y="4441.1411"
+           transform="matrix(1,0,0.30627002,0.95194468,0,0)" />
+        <rect
+           style="fill:#673ab7;fill-opacity:1;stroke:none"
+           id="rect4873-5-7-6-8-5-9"
+           width="1000.001"
+           height="1200.7159"
+           x="-9401.3848"
+           y="4027.0039" />
+      </g>
+    </g>
+    <g
+       id="g4099-0-3-3"
+       transform="matrix(0.50000003,0,0,0.50000003,20.285708,1077.324)"
+       inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-mdpi/icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         transform="matrix(0.05953488,0,0,0.05953488,360.94352,-444.44291)"
+         d="m -3768.75,11896.112 c 0,445.28 -360.9704,806.25 -806.25,806.25 -445.2796,0 -806.25,-360.97 -806.25,-806.25 0,-445.279 360.9704,-806.25 806.25,-806.25 445.2796,0 806.25,360.971 806.25,806.25 z"
+         sodipodi:ry="806.25"
+         sodipodi:rx="806.25"
+         sodipodi:cy="11896.112"
+         sodipodi:cx="-4575"
+         id="path4911-5-2-7-7-6-0"
+         style="fill:#323232;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <g
+         id="g5188-0-5-4-8-3"
+         transform="matrix(0.032,0,0,0.032,383.71087,112.50369)">
+        <rect
+           style="fill:#311b92;fill-opacity:1;stroke:none"
+           id="rect4875-2-1-6-3-0-7-2-0"
+           width="1000.0001"
+           height="1050.4812"
+           x="-11469.599"
+           y="4651.9897"
+           transform="matrix(1,0,0.30627002,0.95194468,0,0)" />
+        <rect
+           style="fill:#673ab7;fill-opacity:1;stroke:none"
+           id="rect4877-9-4-7-6-6-7-3"
+           width="1000"
+           height="1200.7159"
+           x="-9723.1143"
+           y="4227.7207" />
+        <rect
+           style="fill:#311b92;fill-opacity:1;stroke:none"
+           id="rect4875-2-1-61-1-6-3-0"
+           width="1000.0001"
+           height="1050.4812"
+           x="-11083.301"
+           y="4441.1411"
+           transform="matrix(1,0,0.30627002,0.95194468,0,0)" />
+        <rect
+           style="fill:#673ab7;fill-opacity:1;stroke:none"
+           id="rect4873-5-7-6-8-5-9-8"
+           width="1000.001"
+           height="1200.7159"
+           x="-9401.3848"
+           y="4027.0039" />
+      </g>
+    </g>
+    <g
+       id="g4099-0-3-3-5"
+       transform="matrix(0.50000003,0,0,0.50000003,137.14285,1070.4668)"
+       inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-mdpi/icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         transform="matrix(0.05953488,0,0,0.05953488,360.94352,-444.44291)"
+         d="m -3768.75,11896.112 c 0,445.28 -360.9704,806.25 -806.25,806.25 -445.2796,0 -806.25,-360.97 -806.25,-806.25 0,-445.279 360.9704,-806.25 806.25,-806.25 445.2796,0 806.25,360.971 806.25,806.25 z"
+         sodipodi:ry="806.25"
+         sodipodi:rx="806.25"
+         sodipodi:cy="11896.112"
+         sodipodi:cx="-4575"
+         id="path4911-5-2-7-7-6-0-5"
+         style="fill:#323232;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <g
+         id="g5188-0-5-4-8-3-2"
+         transform="matrix(0.032,0,0,0.032,383.71087,112.50369)">
+        <rect
+           style="fill:#311b92;fill-opacity:1;stroke:none"
+           id="rect4875-2-1-6-3-0-7-2-0-3"
+           width="1000.0001"
+           height="1050.4812"
+           x="-11469.599"
+           y="4651.9897"
+           transform="matrix(1,0,0.30627002,0.95194468,0,0)" />
+        <rect
+           style="fill:#673ab7;fill-opacity:1;stroke:none"
+           id="rect4877-9-4-7-6-6-7-3-3"
+           width="1000"
+           height="1200.7159"
+           x="-9723.1143"
+           y="4227.7207" />
+        <rect
+           style="fill:#311b92;fill-opacity:1;stroke:none"
+           id="rect4875-2-1-61-1-6-3-0-2"
+           width="1000.0001"
+           height="1050.4812"
+           x="-11083.301"
+           y="4441.1411"
+           transform="matrix(1,0,0.30627002,0.95194468,0,0)" />
+        <rect
+           style="fill:#673ab7;fill-opacity:1;stroke:none"
+           id="rect4873-5-7-6-8-5-9-8-1"
+           width="1000.001"
+           height="1200.7159"
+           x="-9401.3848"
+           y="4027.0039" />
+      </g>
+    </g>
+    <rect
+       style="fill:#f5f5f5;fill-opacity:1;stroke:none"
+       id="rect4162-1"
+       width="800"
+       height="480"
+       x="-1157.8312"
+       y="-78.375595"
+       inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-port-hdpi/screen.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <g
+       id="g4099-3-2"
+       transform="matrix(2.5000002,0,0,2.5000002,-383.05303,-1417.308)"
+       inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-port-hdpi/screen.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         transform="matrix(0.05953488,0,0,0.05953488,360.94352,-444.44291)"
+         d="m -3768.75,11896.112 c 0,445.28 -360.9704,806.25 -806.25,806.25 -445.2796,0 -806.25,-360.97 -806.25,-806.25 0,-445.279 360.9704,-806.25 806.25,-806.25 445.2796,0 806.25,360.971 806.25,806.25 z"
+         sodipodi:ry="806.25"
+         sodipodi:rx="806.25"
+         sodipodi:cy="11896.112"
+         sodipodi:cx="-4575"
+         id="path4911-5-2-7-0-3"
+         style="fill:#323232;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <g
+         id="g5188-0-5-7-9"
+         transform="matrix(0.032,0,0,0.032,383.71087,112.50369)">
+        <rect
+           style="fill:#311b92;fill-opacity:1;stroke:none"
+           id="rect4875-2-1-6-3-0-9-04"
+           width="1000.0001"
+           height="1050.4812"
+           x="-11469.599"
+           y="4651.9897"
+           transform="matrix(1,0,0.30627002,0.95194468,0,0)" />
+        <rect
+           style="fill:#673ab7;fill-opacity:1;stroke:none"
+           id="rect4877-9-4-7-6-8-2"
+           width="1000"
+           height="1200.7159"
+           x="-9723.1143"
+           y="4227.7207" />
+        <rect
+           style="fill:#311b92;fill-opacity:1;stroke:none"
+           id="rect4875-2-1-61-1-4-1"
+           width="1000.0001"
+           height="1050.4812"
+           x="-11083.301"
+           y="4441.1411"
+           transform="matrix(1,0,0.30627002,0.95194468,0,0)" />
+        <rect
+           style="fill:#673ab7;fill-opacity:1;stroke:none"
+           id="rect4873-5-7-6-8-9-8"
+           width="1000.001"
+           height="1200.7159"
+           x="-9401.3848"
+           y="4027.0039" />
+      </g>
+    </g>
+    <rect
+       style="fill:#f5f5f5;fill-opacity:1;stroke:none"
+       id="rect4162-8-9"
+       width="320"
+       height="200"
+       x="-667.31335"
+       y="-419.20822"
+       inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-port-ldpi/screen.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <g
+       id="g4099-3-3-8"
+       transform="matrix(1.0416667,0,0,1.0416667,226.9463,-782.09538)"
+       inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-port-ldpi/screen.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         transform="matrix(0.05953488,0,0,0.05953488,360.94352,-444.44291)"
+         d="m -3768.75,11896.112 c 0,445.28 -360.9704,806.25 -806.25,806.25 -445.2796,0 -806.25,-360.97 -806.25,-806.25 0,-445.279 360.9704,-806.25 806.25,-806.25 445.2796,0 806.25,360.971 806.25,806.25 z"
+         sodipodi:ry="806.25"
+         sodipodi:rx="806.25"
+         sodipodi:cy="11896.112"
+         sodipodi:cx="-4575"
+         id="path4911-5-2-7-0-0-0"
+         style="fill:#323232;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <g
+         id="g5188-0-5-7-3-6"
+         transform="matrix(0.032,0,0,0.032,383.71087,112.50369)">
+        <rect
+           style="fill:#311b92;fill-opacity:1;stroke:none"
+           id="rect4875-2-1-6-3-0-9-0-3"
+           width="1000.0001"
+           height="1050.4812"
+           x="-11469.599"
+           y="4651.9897"
+           transform="matrix(1,0,0.30627002,0.95194468,0,0)" />
+        <rect
+           style="fill:#673ab7;fill-opacity:1;stroke:none"
+           id="rect4877-9-4-7-6-8-6-1"
+           width="1000"
+           height="1200.7159"
+           x="-9723.1143"
+           y="4227.7207" />
+        <rect
+           style="fill:#311b92;fill-opacity:1;stroke:none"
+           id="rect4875-2-1-61-1-4-4-9"
+           width="1000.0001"
+           height="1050.4812"
+           x="-11083.301"
+           y="4441.1411"
+           transform="matrix(1,0,0.30627002,0.95194468,0,0)" />
+        <rect
+           style="fill:#673ab7;fill-opacity:1;stroke:none"
+           id="rect4873-5-7-6-8-9-7-3"
+           width="1000.001"
+           height="1200.7159"
+           x="-9401.3848"
+           y="4027.0039" />
+      </g>
+    </g>
+    <rect
+       style="fill:#f5f5f5;fill-opacity:1;stroke:none"
+       id="rect4162-5-0"
+       width="480"
+       height="320"
+       x="-807.92249"
+       y="-875.18799"
+       inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-port-mdpi/screen.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <g
+       id="g4099-3-6-7"
+       transform="matrix(1.6666668,0,0,1.6666668,567.5689,-1007.5737)"
+       inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-port-mdpi/screen.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         transform="matrix(0.05953488,0,0,0.05953488,360.94352,-444.44291)"
+         d="m -3768.75,11896.112 c 0,445.28 -360.9704,806.25 -806.25,806.25 -445.2796,0 -806.25,-360.97 -806.25,-806.25 0,-445.279 360.9704,-806.25 806.25,-806.25 445.2796,0 806.25,360.971 806.25,806.25 z"
+         sodipodi:ry="806.25"
+         sodipodi:rx="806.25"
+         sodipodi:cy="11896.112"
+         sodipodi:cx="-4575"
+         id="path4911-5-2-7-0-4-0"
+         style="fill:#323232;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <g
+         id="g5188-0-5-7-5-2"
+         transform="matrix(0.032,0,0,0.032,383.71087,112.50369)">
+        <rect
+           style="fill:#311b92;fill-opacity:1;stroke:none"
+           id="rect4875-2-1-6-3-0-9-4-2"
+           width="1000.0001"
+           height="1050.4812"
+           x="-11469.599"
+           y="4651.9897"
+           transform="matrix(1,0,0.30627002,0.95194468,0,0)" />
+        <rect
+           style="fill:#673ab7;fill-opacity:1;stroke:none"
+           id="rect4877-9-4-7-6-8-7-9"
+           width="1000"
+           height="1200.7159"
+           x="-9723.1143"
+           y="4227.7207" />
+        <rect
+           style="fill:#311b92;fill-opacity:1;stroke:none"
+           id="rect4875-2-1-61-1-4-3-4"
+           width="1000.0001"
+           height="1050.4812"
+           x="-11083.301"
+           y="4441.1411"
+           transform="matrix(1,0,0.30627002,0.95194468,0,0)" />
+        <rect
+           style="fill:#673ab7;fill-opacity:1;stroke:none"
+           id="rect4873-5-7-6-8-9-5-6"
+           width="1000.001"
+           height="1200.7159"
+           x="-9401.3848"
+           y="4027.0039" />
+      </g>
+    </g>
+    <rect
+       style="fill:#f5f5f5;fill-opacity:1;stroke:none"
+       id="rect4162-5-8-5"
+       width="1280"
+       height="720"
+       x="-1616.0242"
+       y="-1685.3201"
+       inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-port-xhdpi/screen.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <g
+       id="g4099-3-6-1-6"
+       transform="matrix(3.7500002,0,0,3.7500002,993.17716,-1965.2394)"
+       inkscape:export-filename="/home/vonlenska/repositories/me/joce/mjoce/platforms/android/res/drawable-port-xhdpi/screen.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         transform="matrix(0.05953488,0,0,0.05953488,360.94352,-444.44291)"
+         d="m -3768.75,11896.112 c 0,445.28 -360.9704,806.25 -806.25,806.25 -445.2796,0 -806.25,-360.97 -806.25,-806.25 0,-445.279 360.9704,-806.25 806.25,-806.25 445.2796,0 806.25,360.971 806.25,806.25 z"
+         sodipodi:ry="806.25"
+         sodipodi:rx="806.25"
+         sodipodi:cy="11896.112"
+         sodipodi:cx="-4575"
+         id="path4911-5-2-7-0-4-8-2"
+         style="fill:#323232;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <g
+         id="g5188-0-5-7-5-8-5"
+         transform="matrix(0.032,0,0,0.032,383.71087,112.50369)">
+        <rect
+           style="fill:#311b92;fill-opacity:1;stroke:none"
+           id="rect4875-2-1-6-3-0-9-4-1-4"
+           width="1000.0001"
+           height="1050.4812"
+           x="-11469.599"
+           y="4651.9897"
+           transform="matrix(1,0,0.30627002,0.95194468,0,0)" />
+        <rect
+           style="fill:#673ab7;fill-opacity:1;stroke:none"
+           id="rect4877-9-4-7-6-8-7-1-2"
+           width="1000"
+           height="1200.7159"
+           x="-9723.1143"
+           y="4227.7207" />
+        <rect
+           style="fill:#311b92;fill-opacity:1;stroke:none"
+           id="rect4875-2-1-61-1-4-3-8-3"
+           width="1000.0001"
+           height="1050.4812"
+           x="-11083.301"
+           y="4441.1411"
+           transform="matrix(1,0,0.30627002,0.95194468,0,0)" />
+        <rect
+           style="fill:#673ab7;fill-opacity:1;stroke:none"
+           id="rect4873-5-7-6-8-9-5-4-9"
+           width="1000.001"
+           height="1200.7159"
+           x="-9401.3848"
+           y="4027.0039" />
+      </g>
+    </g>
+  </g>
+</svg>
