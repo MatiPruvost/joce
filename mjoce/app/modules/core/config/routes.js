@@ -8,13 +8,6 @@
  * @description Defines the routes and other config within the core module
  */
 
-/*angular.module('core', ['ngMaterial'])
-.config(function($mdThemingProvider) {
-  $mdThemingProvider.theme('default')
-    .primaryPalette('pink')
-    .accentPalette('orange');
-});*/
-
 angular
     .module('core', ['ngCordova', 'ngMaterial'])
     .config(['$stateProvider',

@@ -14,7 +14,7 @@ angular
             $mdToast.show(
               $mdToast.simple()
                 .content('You can add a new Jocex')
-                .position('top right')
+                .position('bottom right')
                 .hideDelay(3000)
             );
           };
@@ -22,7 +22,7 @@ angular
             $mdToast.show(
               $mdToast.simple()
                 .content('You need wait for add a new Jocex')
-                .position('top right')
+                .position('bottom right')
                 .hideDelay(3000)
             );
           };
@@ -30,7 +30,7 @@ angular
             $mdToast.show(
               $mdToast.simple()
                 .content('You already was finished this Joce')
-                .position('top right')
+                .position('bottom right')
                 .hideDelay(3000)
             );
           };
@@ -43,6 +43,7 @@ angular
             return debounceFn;
           }
           $scope.go = function (path) {
+            $mdSidenav('left').close();
             $location.path(path);
           };
           function getJoces (){

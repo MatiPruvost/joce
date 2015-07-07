@@ -21,42 +21,43 @@
     <script src="cordova.js"></script>
   </head>
 
-  <body>
+  <body layout="row">
 
-    <div ng-controller="HomeController">
+    <div ng-controller="HomeController" layout="column" layout-fill>
       <md-toolbar class='md-medium-tall'>
         <div class="md-toolbar-tools">
           <md-button class="md-icon-button" aria-label="Settings">
             <md-icon ng-click="toggleLeft()" md-svg-icon="img/icons/menu.svg"></md-icon>
           </md-button>
-          <h2>
+          <h2 ng-click="go('/')">
             <span>Joce</span>
           </h2>
         </div>
       </md-toolbar>
 
       <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
-        <md-toolbar class="md-theme-light">
+        <md-toolbar class="md-theme-light md-medium-tall">
           <h1 class="md-toolbar-tools">Menu</h1>
         </md-toolbar>
         <md-content layout-padding>
-          <md-list-item>
-              <p>Tutorial</p>
-              <md-divider ng-if="!$last"></md-divider>
+          <md-list-item ng-click="go('/about')">
+            <p>About</p>
+            <md-divider ng-if="!$last"></md-divider>
           </md-list-item>
-          <md-list-item>
-              <p>About</p>
-              <md-divider ng-if="!$last"></md-divider>
-          </md-list-item>
-          <md-list-item>
-              <p>Share app</p>
-              <md-divider ng-if="!$last"></md-divider>
+          <md-list-item ng-click="go('/shareApp')">
+            <p>Share app</p>
+            <md-divider ng-if="!$last"></md-divider>
           </md-list-item>
         </md-content>
       </md-sidenav>
 
-      <md-content ui-view layout="column">
+      <md-content ui-view style="height: 600px;">
       </md-content>
+
+      <md-toolbar flex>
+        <div class="md-toolbar-tools">
+        </div>
+      </md-toolbar>
 
     </div>
 
@@ -87,10 +88,12 @@
         <script src="js/application.js"></script>
         <script src="modules/core/core.js"></script>
         <script src="modules/core/config/routes.js"></script>
+        <script src="modules/core/controllers/about.js"></script>
         <script src="modules/core/controllers/addJocex.js"></script>
         <script src="modules/core/controllers/createJoce.js"></script>
         <script src="modules/core/controllers/editJoce.js"></script>
         <script src="modules/core/controllers/home.js"></script>
+        <script src="modules/core/controllers/shareApp.js"></script>
         <script src="modules/core/controllers/showJoce.js"></script>
         <!-- endinjector -->
     <!-- endbuild -->
