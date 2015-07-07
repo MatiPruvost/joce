@@ -56,9 +56,11 @@
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views/showJoce.html \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views/home.html \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views/about.html \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views/editJoce.html \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views/createJoce.html \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views/addJocex.html \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views/shareApp.html \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/fonts/glyphicons-halflings-regular.ttf \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/fonts/glyphicons-halflings-regular.woff2 \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/fonts/glyphicons-halflings-regular.eot \

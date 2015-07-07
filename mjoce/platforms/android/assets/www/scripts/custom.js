@@ -48,13 +48,6 @@ ApplicationConfiguration.registerModule('core');
 'use strict';
 
 
-/*angular.module('core', ['ngMaterial'])
-.config(function($mdThemingProvider) {
-  $mdThemingProvider.theme('default')
-    .primaryPalette('pink')
-    .accentPalette('orange');
-});*/
-
 angular
     .module('core', ['ngCordova', 'ngMaterial'])
     .config(['$stateProvider',
@@ -119,6 +112,17 @@ angular
         }
     ]);
 
+'use strict';
+
+angular
+    .module('core')
+    .controller('aboutController', ['$scope', '$location', '$stateParams', '$timeout', '$cordovaSocialSharing',
+        function($scope, $location, $stateParams, $timeout, $cordovaSocialSharing) {
+          $scope.shareAnywhere = function() {
+            $cordovaSocialSharing.share('You can download Joce here', null, null, 'http://www.google.com');
+          }
+        }
+    ]);
 'use strict';
 
 angular
@@ -390,7 +394,7 @@ angular
             $mdToast.show(
               $mdToast.simple()
                 .content('You can add a new Jocex')
-                .position('top right')
+                .position('bottom right')
                 .hideDelay(3000)
             );
           };
@@ -398,7 +402,7 @@ angular
             $mdToast.show(
               $mdToast.simple()
                 .content('You need wait for add a new Jocex')
-                .position('top right')
+                .position('bottom right')
                 .hideDelay(3000)
             );
           };
@@ -406,7 +410,7 @@ angular
             $mdToast.show(
               $mdToast.simple()
                 .content('You already was finished this Joce')
-                .position('top right')
+                .position('bottom right')
                 .hideDelay(3000)
             );
           };
@@ -419,6 +423,7 @@ angular
             return debounceFn;
           }
           $scope.go = function (path) {
+            $mdSidenav('left').close();
             $location.path(path);
           };
           function getJoces (){
@@ -461,6 +466,17 @@ angular
         }
     ]);
 
+'use strict';
+
+angular
+    .module('core')
+    .controller('shareAppController', ['$scope', '$location', '$stateParams', '$timeout', '$cordovaSocialSharing',
+        function($scope, $location, $stateParams, $timeout, $cordovaSocialSharing) {
+          $scope.shareAnywhere = function() {
+            $cordovaSocialSharing.share('You can download Joce here', null, null, 'http://www.google.com');
+          }
+        }
+    ]);
 'use strict';
 
 angular
