@@ -29,6 +29,8 @@ module.exports = function(config) {
             'app/lib/ngCordova/dist/ng-cordova.js',
             'app/lib/angular-aria/angular-aria.js',
             'app/lib/angular-material/angular-material.js',
+            'app/lib/angular-translate/angular-translate.js',
+            'app/lib/angular-translate-loader-static-files/angular-translate-loader-static-files.js',
             <!-- endinjector -->
 
             'app/js/config.js',

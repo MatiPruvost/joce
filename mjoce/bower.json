@@ -16,6 +16,8 @@
     "angular-ui-router": "~0.2.10",
     "ngCordova": "~0.1.15-alpha",
     "angular-material": "~0.10.0",
-    "material-design-icons": "~2.0.0"
+    "material-design-icons": "~2.0.0",
+    "angular-translate": "~2.7.2",
+    "angular-translate-loader-static-files": "~2.7.2"
   }
 }
