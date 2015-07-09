@@ -38,19 +38,19 @@
 
       <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
         <md-toolbar class="md-theme-light md-medium-tall">
-          <h1 class="md-toolbar-tools">Menu</h1>
+          <h1 class="md-toolbar-tools">{{ 'index.sidebar' | translate }}</h1>
         </md-toolbar>
         <md-content layout-padding>
           <md-list-item ng-click="go('/about')">
-            <p>About</p>
+            <p>{{ 'about.sidebar' | translate }}</p>
             <md-divider ng-if="!$last"></md-divider>
           </md-list-item>
           <md-list-item ng-click="go('/settings')">
-            <p>Settings</p>
+            <p>{{ 'settings.sidebar' | translate }}</p>
             <md-divider ng-if="!$last"></md-divider>
           </md-list-item>
           <md-list-item ng-click="go('/shareApp')">
-            <p>Share app</p>
+            <p>{{ 'shareApp.sidebar' | translate }}</p>
             <md-divider ng-if="!$last"></md-divider>
           </md-list-item>
         </md-content>
