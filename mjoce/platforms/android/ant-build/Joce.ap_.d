@@ -34,6 +34,7 @@
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/cordova.js \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/scripts \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/languages \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/cordova_plugins.js \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/fonts \
@@ -52,6 +53,8 @@
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/icons/menu.svg \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/scripts/custom.js \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/scripts/vendor.js \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/languages/en.json \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/languages/es.json \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views/showJoce.html \
@@ -59,10 +62,10 @@
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views/about.html \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views/editJoce.html \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views/createJoce.html \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views/setting.html \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views/addJocex.html \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views/shareApp.html \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/fonts/glyphicons-halflings-regular.ttf \
-/home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/fonts/glyphicons-halflings-regular.woff2 \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/fonts/glyphicons-halflings-regular.eot \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/fonts/glyphicons-halflings-regular.svg \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/fonts/glyphicons-halflings-regular.woff \
