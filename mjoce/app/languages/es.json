@@ -1,6 +1,68 @@
 {
-	"home":{
-		"header":"Tus joces",
-		"createNewJoce":"Crea un nuevo joce"
-	}
+  "index":{
+    "sidebar":"Menu"
+  },
+  "about":{
+    "sidebar":"Acerca",
+    "header":"Acerca"
+  },
+  "addJocex":{
+    "header":"Agregar un jocex",
+    "lastest":"Último jocex",
+    "addLabel":"Agregar un nuevo jocex",
+    "add":"Agregar jocex",
+    "lastestJocex":"No hay ningún jocex en este joce",
+    "alert":{
+      "title":"Tienes que esperar..",
+      "text1":"Tienes que esperar hasta el ",
+      "text2":" a las "
+    }
+  },
+  "createJoce":{
+    "header":"Crear un joce",
+    "name":"Nombre del joce",
+    "number":"Número de jocex en el joce",
+    "days":"Días entre jocex",
+    "create":"Crear joce"
+  },
+  "editJoce":{
+    "header":"Editar joce",
+    "name":"Nombre del joce",
+    "number":"Número de jocex en el joce",
+    "days":"Días entre jocex",
+    "update":"Actualizar joce",
+    "remove":"Eliminar joce",
+    "alert":{
+      "title":"Ya has terminado..",
+      "text":"No puedes editar este joce porque ya fue finalizado"
+    }
+  },
+  "home":{
+    "header":"Tus joces",
+    "createNewJoce":"Crear un nuevo joce",
+    "toasts":{
+      "finished":"Ya has terminado ese joce",
+      "waiting":"Tienes que esperar para agregar un nuevo jocex",
+      "ready":"Puedes agregar un nuevo jocex"
+    }
+  },
+  "settings":{
+    "sidebar":"Configuraciones",
+    "header":"Configuraciones",
+    "subheader":"Lenguajes",
+    "english":"Ingĺés",
+    "spanish":"Español",
+    "text":"Puedes descargar Joce desde aquí"
+  },
+  "shareApp":{
+    "sidebar":"Copartit app",
+    "header":"Compartir app Joce",
+    "share":"Compartir app Joce",
+    "text":"Puedes descargar Joce desde aquí"
+  },
+  "showJoce":{
+    "header":"Tu joce finalizado",
+    "share":"Compartir joce",
+    "text":"Este es tu joce finalizado"
+  }
 }
