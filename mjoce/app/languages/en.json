@@ -52,7 +52,8 @@
     "subheader":"Languages",
     "english":"English",
     "spanish":"Spanish",
-    "text":"You can download Joce here"
+    "text":"You can download Joce here",
+    "submit":"Change language"
   },
   "shareApp":{
     "sidebar":"Share app",
