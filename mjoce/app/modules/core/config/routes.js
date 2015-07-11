@@ -9,13 +9,16 @@
  */
 
 angular
-  .module('core', ['ngCordova', 'ngMaterial', 'pascalprecht.translate'])
+  .module('core', ['ngCordova', 'ngMaterial', 'ngCookies', 'pascalprecht.translate'])
   .config(['$stateProvider',
     '$urlRouterProvider',
     '$mdThemingProvider',
     '$translateProvider',
-    function($stateProvider, $urlRouterProvider, $mdThemingProvider, $translateProvider) {
-      
+    function($stateProvider, 
+      $urlRouterProvider, 
+      $mdThemingProvider, 
+      $translateProvider) {
+
       $mdThemingProvider.theme('default')
         .primaryPalette('deep-purple')
         .accentPalette('purple')
@@ -36,7 +39,8 @@ angular
         .state('home', {
           url: '/',
           templateUrl: 'modules/core/views/home.html',
-          controller: 'HomeController'
+          controller: 'HomeController',
+          service: 'languageService'
         });
       $stateProvider
         .state('createJoce', {
@@ -87,5 +91,6 @@ angular
       });
 
       $translateProvider.preferredLanguage('en');
+      $translateProvider.useSanitizeValueStrategy('sanitize');
     }
   ]);

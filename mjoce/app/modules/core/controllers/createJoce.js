@@ -8,8 +8,12 @@
  */
 angular
     .module('core')
-    .controller('createJoceController', ['$scope', '$location', '$timeout',
-        function($scope, $location, $timeout) {
+    .controller('createJoceController', ['$scope', 
+      '$location', 
+      '$timeout',
+        function($scope, 
+          $location, 
+          $timeout) {
           $scope.submit = function () {
             var joce = {
               name:$scope.name,

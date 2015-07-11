@@ -8,8 +8,20 @@
  */
 angular
     .module('core')
-    .controller('HomeController', ['$scope', '$location', '$timeout', '$mdSidenav', '$mdUtil','$mdToast', '$translate',
-        function($scope, $location, $timeout, $mdSidenav, $mdUtil, $mdToast, $translate) {
+    .controller('HomeController', ['$scope', 
+      '$location', 
+      '$timeout', 
+      '$mdSidenav', 
+      '$mdUtil',
+      '$mdToast', 
+      '$translate',
+        function($scope, 
+          $location, 
+          $timeout, 
+          $mdSidenav, 
+          $mdUtil, 
+          $mdToast, 
+          $translate) {
           $scope.showUpdateableToast = function() {
             $mdToast.show(
               $mdToast.simple()

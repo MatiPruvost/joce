@@ -8,8 +8,18 @@
  */
 angular
     .module('core')
-    .controller('shareAppController', ['$scope', '$location', '$stateParams', '$timeout', '$cordovaSocialSharing', '$translate',
-        function($scope, $location, $stateParams, $timeout, $cordovaSocialSharing, $translate) {
+    .controller('shareAppController', ['$scope', 
+    	'$location', 
+    	'$stateParams', 
+    	'$timeout', 
+    	'$cordovaSocialSharing', 
+    	'$translate',
+        function($scope, 
+        	$location, 
+        	$stateParams, 
+        	$timeout, 
+        	$cordovaSocialSharing, 
+        	$translate) {
           $scope.shareAnywhere = function() {
             $cordovaSocialSharing.share($translate.instant('shareApp.text'), null, null, 'http://www.google.com');
           }

@@ -8,8 +8,18 @@
  */
 angular
     .module('core')
-    .controller('editJoceController', ['$scope', '$location', '$timeout', '$stateParams', '$mdDialog', '$translate',
-        function($scope, $location, $timeout, $stateParams, $mdDialog, $translate) {
+    .controller('editJoceController', ['$scope', 
+      '$location', 
+      '$timeout', 
+      '$stateParams', 
+      '$mdDialog', 
+      '$translate',
+        function($scope, 
+          $location, 
+          $timeout, 
+          $stateParams, 
+          $mdDialog, 
+          $translate) {
           $scope.submit = function () {
             var joce = {
               name:$scope.name,

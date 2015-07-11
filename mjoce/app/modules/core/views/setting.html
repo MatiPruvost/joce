@@ -6,10 +6,10 @@
 
 <md-subheader class="md-primary">{{ 'settings.subheader' | translate }}</md-subheader>
 
-<md-checkbox ng-model="data.cb1" aria-label="Checkbox 1">
-  {{ 'settings.english' | translate }}
-</md-checkbox>
-
-<md-checkbox ng-model="data.cb1" aria-label="Checkbox 1">
-  {{ 'settings.spanish' | translate }}
-</md-checkbox>
+<form ng-submit="submit()">
+	<md-radio-group ng-model="data.language">
+	  <md-radio-button value="en">{{ 'settings.english' | translate }}</md-radio-button>
+	  <md-radio-button value="es">{{ 'settings.spanish' | translate }}</md-radio-button>
+	</md-radio-group>
+	<md-button type="submit" class="md-raised md-primary">{{ 'settings.submit' | translate }}</md-button>
+</form>

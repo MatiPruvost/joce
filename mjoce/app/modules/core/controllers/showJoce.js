@@ -8,8 +8,18 @@
  */
 angular
     .module('core')
-    .controller('showJoceController', ['$scope', '$location', '$stateParams', '$timeout', '$cordovaSocialSharing', '$translate',
-        function($scope, $location, $stateParams, $timeout, $cordovaSocialSharing, $translate) {
+    .controller('showJoceController', ['$scope', 
+      '$location', 
+      '$stateParams', 
+      '$timeout', 
+      '$cordovaSocialSharing', 
+      '$translate',
+        function($scope, 
+          $location, 
+          $stateParams, 
+          $timeout, 
+          $cordovaSocialSharing, 
+          $translate) {
           $scope.shareAnywhere = function() {
             var dbSize = 5 * 1024 * 1024; // 5Mb
             var db = window.openDatabase("joceTest", "1.0", "Joce Test DB", dbSize);

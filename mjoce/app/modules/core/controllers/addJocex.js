@@ -8,8 +8,18 @@
  */
 angular
     .module('core')
-    .controller('addJocexController', ['$scope', '$location', '$stateParams', '$timeout', '$mdDialog', '$translate',
-        function($scope, $location, $stateParams, $timeout, $mdDialog, $translate) {
+    .controller('addJocexController', ['$scope', 
+      '$location', 
+      '$stateParams', 
+      '$timeout', 
+      '$mdDialog', 
+      '$translate',
+        function($scope, 
+          $location, 
+          $stateParams, 
+          $timeout, 
+          $mdDialog, 
+          $translate) {
           $scope.go = function (path) {
             $location.path(path);
           };
