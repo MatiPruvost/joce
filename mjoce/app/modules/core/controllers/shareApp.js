@@ -8,10 +8,10 @@
  */
 angular
     .module('core')
-    .controller('shareAppController', ['$scope', '$location', '$stateParams', '$timeout', '$cordovaSocialSharing',
-        function($scope, $location, $stateParams, $timeout, $cordovaSocialSharing) {
+    .controller('shareAppController', ['$scope', '$location', '$stateParams', '$timeout', '$cordovaSocialSharing', '$translate',
+        function($scope, $location, $stateParams, $timeout, $cordovaSocialSharing, $translate) {
           $scope.shareAnywhere = function() {
-            $cordovaSocialSharing.share('You can download Joce here', null, null, 'http://www.google.com');
+            $cordovaSocialSharing.share($translate.instant('shareApp.text'), null, null, 'http://www.google.com');
           }
         }
     ]);

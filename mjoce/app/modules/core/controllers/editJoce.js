@@ -8,8 +8,8 @@
  */
 angular
     .module('core')
-    .controller('editJoceController', ['$scope', '$location', '$timeout', '$stateParams', '$mdDialog',
-        function($scope, $location, $timeout, $stateParams, $mdDialog) {
+    .controller('editJoceController', ['$scope', '$location', '$timeout', '$stateParams', '$mdDialog', '$translate',
+        function($scope, $location, $timeout, $stateParams, $mdDialog, $translate) {
           $scope.submit = function () {
             var joce = {
               name:$scope.name,
@@ -68,8 +68,8 @@ angular
                     $mdDialog.show(
                         $mdDialog.alert()
                           .parent(angular.element(document.body))
-                          .title('You have to wait..')
-                          .content('You can not edit thi joce because it was finished')
+                          .title($translate.instant('editJoce.alert.title'))
+                          .content($translate.instant('editJoce.alert.text'))
                           .ariaLabel('Alert Dialog Demo')
                           .ok('Ok')
                           .targetEvent()

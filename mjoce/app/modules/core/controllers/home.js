@@ -8,12 +8,12 @@
  */
 angular
     .module('core')
-    .controller('HomeController', ['$scope', '$location', '$timeout', '$mdSidenav', '$mdUtil','$mdToast',
-        function($scope, $location, $timeout, $mdSidenav, $mdUtil, $mdToast) {
+    .controller('HomeController', ['$scope', '$location', '$timeout', '$mdSidenav', '$mdUtil','$mdToast', '$translate',
+        function($scope, $location, $timeout, $mdSidenav, $mdUtil, $mdToast, $translate) {
           $scope.showUpdateableToast = function() {
             $mdToast.show(
               $mdToast.simple()
-                .content('You can add a new Jocex')
+                .content($translate.instant('home.toasts.ready'))
                 .position('bottom right')
                 .hideDelay(3000)
             );
@@ -21,7 +21,7 @@ angular
           $scope.showWaitToast = function() {
             $mdToast.show(
               $mdToast.simple()
-                .content('You need wait for add a new Jocex')
+                .content($translate.instant('home.toasts.waiting'))
                 .position('bottom right')
                 .hideDelay(3000)
             );
@@ -29,7 +29,7 @@ angular
           $scope.showFinishedToast = function() {
             $mdToast.show(
               $mdToast.simple()
-                .content('You already was finished this Joce')
+                .content($translate.instant('home.toasts.finished'))
                 .position('bottom right')
                 .hideDelay(3000)
             );

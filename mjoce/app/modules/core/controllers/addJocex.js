@@ -8,8 +8,8 @@
  */
 angular
     .module('core')
-    .controller('addJocexController', ['$scope', '$location', '$stateParams', '$timeout', '$mdDialog',
-        function($scope, $location, $stateParams, $timeout, $mdDialog) {
+    .controller('addJocexController', ['$scope', '$location', '$stateParams', '$timeout', '$mdDialog', '$translate',
+        function($scope, $location, $stateParams, $timeout, $mdDialog, $translate) {
           $scope.go = function (path) {
             $location.path(path);
           };
@@ -118,7 +118,7 @@ angular
                 var lastestJocex = jocexsDb[jocexsDb.length -1];
                 $timeout(function(){
                   if(lastestJocex === undefined){
-                    var jdb = {text:"There aren't any jocex for this joce"};
+                    var jdb = {text:$translate.instant('addJocex.lastestJocex')};
                     $scope.lastestJocex = jdb;
                     $scope.disabled = false;
                   }
@@ -130,17 +130,16 @@ angular
                       var validedTime = new Date(validTime);
                       var date = validedTime.toLocaleDateString();
                       var time_ = validedTime.toLocaleTimeString();
-                      var text1 = "You need wait until the ";
-                      var text2 = " at ";
+                      var text1 = $translate.instant('addJocex.alert.text1');
+                      var text2 = $translate.instant('addJocex.alert.text2');
                       var text = text1.concat(date, text2, time_);
                       $scope.disabled = true;
                       $scope.alertShow = true;
                       $scope.alerMessage = text;
-                      // alert(text);
                       $mdDialog.show(
                         $mdDialog.alert()
                           .parent(angular.element(document.body))
-                          .title('You have to wait..')
+                          .title($translate.instant('addJocex.alert.title'))
                           .content(text)
                           .ariaLabel('Alert Dialog Demo')
                           .ok('Ok')
