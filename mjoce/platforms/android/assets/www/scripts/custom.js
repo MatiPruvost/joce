@@ -655,8 +655,8 @@ angular
                 }
                 $timeout(function(){
                   var text = jocexsTextDb.join(" ");
-                  var textList = [text, $translate.instant('showJoce.text')];
-                  text = textList.join(", ");
+                  var textList = [$translate.instant('showJoce.text'), text];
+                  text = textList.join(": ");
                   $cordovaSocialSharing.share(text);
                 });
               }, null);

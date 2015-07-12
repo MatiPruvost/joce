@@ -4,7 +4,15 @@
   },
   "about":{
     "sidebar":"Acerca",
-    "header":"Acerca"
+    "header":"Acerca",
+    "subheader":{
+      "joce":"Acerca de joce",
+      "us":"Acerca nuestro"
+    },
+    "paragraph":{
+      "joce":"Joce es una app para jugar cadaver exquisito con uno mismo",
+      "us":""
+    }
   },
   "addJocex":{
     "header":"Agregar un jocex",
@@ -68,7 +76,13 @@
     "sidebar":"Copartir app",
     "header":"Compartir app Joce",
     "share":"Compartir app Joce",
-    "text":"Puedes descargar Joce desde aquí"
+    "text":"Puedes descargar Joce desde aquí",
+    "subheader":{
+      "share":"Compartir app Joce"
+    },
+    "paragraph":{
+      "share":"Si quieres compartir la aplicación Joce con tus amigos apretá el siguiente botón"
+    }
   },
   "showJoce":{
     "header":"Tu joce finalizado",
