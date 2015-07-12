@@ -15,13 +15,15 @@ angular
       '$mdUtil',
       '$mdToast', 
       '$translate',
+      '$mdDialog',
         function($scope, 
           $location, 
           $timeout, 
           $mdSidenav, 
           $mdUtil, 
           $mdToast, 
-          $translate) {
+          $translate,
+          $mdDialog) {
           $scope.showUpdateableToast = function() {
             $mdToast.show(
               $mdToast.simple()
@@ -58,6 +60,20 @@ angular
             $mdSidenav('left').close();
             $location.path(path);
           };
+          $scope.remove = function (id, index) {
+            var dbSize = 5 * 1024 * 1024; // 5Mb
+            var db = window.openDatabase("joceTest", "1.0", "Joce Test DB", dbSize);
+            db.transaction(function (tx) {
+              tx.executeSql("CREATE TABLE IF NOT EXISTS joce(id INTEGER PRIMARY KEY ASC, name TEXT, number INT, time INT, finished TEXT DEFAULT 'false', until TIMESTAMP)", []);
+            });
+            db.transaction(function (tx) {
+              tx.executeSql('DELETE FROM joce WHERE id = ?', [id]);
+            });
+            db.transaction(function (tx) {
+              tx.executeSql('DELETE FROM jocex WHERE joceId = ?', [id]);
+            });
+            $scope.joces.splice(index, 1);
+          };
           function getJoces (){
             var dbSize = 5 * 1024 * 1024; // 5Mb
             var db = window.openDatabase("joceTest", "1.0", "Joce Test DB", dbSize);
@@ -76,16 +92,19 @@ angular
                     jocesDb[i].src = "img/icons/checkbox-marked-circle.svg";
                     jocesDb[i].click = "showFinishedToast(); $event.stopPropagation()";
                     jocesDb[i].url = "showJoce";
+                    jocesDb[i].status = $translate.instant('home.menu.status.finished');
                   }
                   else if (now >= until){
                     jocesDb[i].src = "img/icons/plus-circle-outline.svg";
                     jocesDb[i].click = "showUpdateableToast(); $event.stopPropagation()";
                     jocesDb[i].url = "addJocex";
+                    jocesDb[i].status = $translate.instant('home.menu.status.ready');
                   }
                   else{
                     jocesDb[i].src = "img/icons/clock.svg";
                     jocesDb[i].click = "showWaitToast(); $event.stopPropagation()";
                     jocesDb[i].url = "addJocex";
+                    jocesDb[i].status = $translate.instant('home.menu.status.waiting');
                   }
                 }
                 $timeout(function(){

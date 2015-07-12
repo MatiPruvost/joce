@@ -14,35 +14,20 @@ angular
       '$timeout', 
       '$translate', 
       '$cookies',
+      'languageService',
         function($scope, 
           $location, 
           $stateParams, 
           $timeout, 
           $translate, 
-          $cookies) {
-          getLanguage();
+          $cookies,
+          languageService) {
+          $scope.data = {
+            language : languageService.getLanguage()
+          };
           $scope.submit = function (){
             $cookies.put('language', $scope.data.language);
+            $translate.use($scope.data.language);
           }
-          function getLanguage() {
-            var navigatorLanguaje = window.navigator.language;
-            navigatorLanguaje = navigatorLanguaje.substring(0, 2);
-            switch (navigatorLanguaje) {
-              case 'en':
-                $scope.data = {
-                  language : 'en'
-                };
-                break;
-              case 'es':
-                $scope.data = {
-                  language : 'es'
-                };
-                break;
-              default: 
-                $scope.data = {
-                  language : 'en'
-                };
-            }
-          };
         }
     ]);

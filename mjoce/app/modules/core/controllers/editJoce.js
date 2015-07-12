@@ -76,14 +76,14 @@ angular
                     $scope.disabled = true;
                     $scope.alertShow = true;
                     $mdDialog.show(
-                        $mdDialog.alert()
-                          .parent(angular.element(document.body))
-                          .title($translate.instant('editJoce.alert.title'))
-                          .content($translate.instant('editJoce.alert.text'))
-                          .ariaLabel('Alert Dialog Demo')
-                          .ok('Ok')
-                          .targetEvent()
-                      );
+                      $mdDialog.alert()
+                        .parent(angular.element(document.body))
+                        .title($translate.instant('editJoce.alert.title'))
+                        .content($translate.instant('editJoce.alert.text'))
+                        .ariaLabel('Alert Dialog Demo')
+                        .ok('Ok')
+                        .targetEvent()
+                    );
                   }
                   else{
                     $scope.disabled = false;

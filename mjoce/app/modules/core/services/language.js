@@ -17,7 +17,7 @@ angular
        */
       this.getLanguage = function() {
         var languageCookies = $cookies.get('language');
-        languageCookies = false;
+        /*languageCookies = false;*/
         if(languageCookies){
           return languageCookies;
         }

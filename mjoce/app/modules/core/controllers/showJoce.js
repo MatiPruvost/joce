@@ -35,7 +35,9 @@ angular
                 }
                 $timeout(function(){
                   var text = jocexsTextDb.join(" ");
-                  $cordovaSocialSharing.share(text, $translate.instant('showJoce.text'));
+                  var textList = [text, $translate.instant('showJoce.text')];
+                  text = textList.join(", ");
+                  $cordovaSocialSharing.share(text);
                 });
               }, null);
             });

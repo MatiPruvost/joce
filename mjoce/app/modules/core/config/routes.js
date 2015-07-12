@@ -9,15 +9,21 @@
  */
 
 angular
-  .module('core', ['ngCordova', 'ngMaterial', 'ngCookies', 'pascalprecht.translate'])
+  .module('core', ['ngCordova', 
+    'ngMaterial', 
+    'ngCookies', 
+    'pascalprecht.translate',
+    'angular-gestures'])
   .config(['$stateProvider',
     '$urlRouterProvider',
     '$mdThemingProvider',
     '$translateProvider',
+    'hammerDefaultOptsProvider',
     function($stateProvider, 
       $urlRouterProvider, 
       $mdThemingProvider, 
-      $translateProvider) {
+      $translateProvider,
+      hammerDefaultOptsProvider) {
 
       $mdThemingProvider.theme('default')
         .primaryPalette('deep-purple')
@@ -91,6 +97,15 @@ angular
       });
 
       $translateProvider.preferredLanguage('en');
+      $translateProvider.useCookieStorage();
       $translateProvider.useSanitizeValueStrategy('sanitize');
+      hammerDefaultOptsProvider.set({
+        recognizers: [
+          [Hammer.Tap,{ event: 'tap'}],
+          [Hammer.Tap, { event: 'doubletap', taps: 2 }, [], ['tap']],
+          [Hammer.Press, { event: 'press', time: 500 }],
+          [Hammer.Pan]
+        ]
+      });
     }
   ]);
