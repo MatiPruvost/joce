@@ -31,6 +31,9 @@ module.exports = function(config) {
             'app/lib/angular-material/angular-material.js',
             'app/lib/angular-translate/angular-translate.js',
             'app/lib/angular-translate-loader-static-files/angular-translate-loader-static-files.js',
+            'app/lib/angular-translate-storage-cookie/angular-translate-storage-cookie.js',
+            'app/lib/hammerjs/hammer.js',
+            'app/lib/angular-gestures/gestures.min.js',
             <!-- endinjector -->
 
             'app/js/config.js',

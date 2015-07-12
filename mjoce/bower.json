@@ -18,6 +18,8 @@
     "angular-material": "~0.10.0",
     "material-design-icons": "~2.0.0",
     "angular-translate": "~2.7.2",
-    "angular-translate-loader-static-files": "~2.7.2"
+    "angular-translate-loader-static-files": "~2.7.2",
+    "angular-translate-storage-cookie": "~2.7.2",
+    "angular-gestures": "~0.3.1"
   }
 }
