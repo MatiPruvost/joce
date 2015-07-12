@@ -90,7 +90,8 @@ angular
                   var until = new Date(jocesDb[i].until);
                   if (jocesDb[i].finished == "true"){
                     jocesDb[i].src = "img/icons/checkbox-marked-circle.svg";
-                    jocesDb[i].click = "showFinishedToast(); $event.stopPropagation()";
+                    jocesDb[i].click = "showFinishedToast()";
+                    jocesDb[i].stopPropagation = "$event.stopPropagation()";
                     jocesDb[i].url = "showJoce";
                     jocesDb[i].status = $translate.instant('home.menu.status.finished');
                   }

@@ -17,7 +17,7 @@
   <md-menu>
     <md-list-item ng-click="go('/{{joce.url}}/{{joce.id}}')" hm-hold="$mdOpenMenu()">
       <p>{{joce.name}}</p>
-      <md-icon md-svg-src="{{joce.src}}" style="color: #FE40FB;" ng-click="{{joce.click}}"></md-icon>
+      <md-icon md-svg-src="{{joce.src}}" style="color: #FE40FB;" ng-click="{{joce.click}};{{joce.stopPropagation}}"></md-icon>
     </md-list-item>
     <md-menu-content width="6">
       <md-menu-item>
