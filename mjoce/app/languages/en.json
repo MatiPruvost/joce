@@ -44,7 +44,16 @@
       "finished":"You already was finished this Joce",
       "waiting":"You need wait for add a new Jocex",
       "ready":"You can add a new Jocex"
-    }
+    },
+    "menu":{
+      "config":"Configurar joce",
+      "status":{
+        "finished":"You already was finished this Joce",
+        "waiting":"You need wait for add a new Jocex",
+        "ready":"You can add a new Jocex"
+      },
+      "remove":"Remove joce"
+    } 
   },
   "settings":{
     "sidebar":"Settings",

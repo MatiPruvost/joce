@@ -44,19 +44,28 @@
       "finished":"Ya has terminado ese joce",
       "waiting":"Tienes que esperar para agregar un nuevo jocex",
       "ready":"Puedes agregar un nuevo jocex"
+    },
+    "menu":{
+      "config":"Configurar joce",
+      "status":{
+        "finished":"Ya has terminado ese joce",
+        "waiting":"Tienes que esperar para agregar un nuevo jocex",
+        "ready":"Puedes agregar un nuevo jocex"
+      },
+      "remove":"Eliminar joce"
     }
   },
   "settings":{
     "sidebar":"Configuraciones",
     "header":"Configuraciones",
     "subheader":"Lenguajes",
-    "english":"Ingĺés",
+    "english":"Inglés",
     "spanish":"Español",
     "text":"Puedes descargar Joce desde aquí",
     "submit":"Cambiar lenguaje"
   },
   "shareApp":{
-    "sidebar":"Copartit app",
+    "sidebar":"Copartir app",
     "header":"Compartir app Joce",
     "share":"Compartir app Joce",
     "text":"Puedes descargar Joce desde aquí"
