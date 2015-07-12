@@ -4,13 +4,42 @@
   </div>
 </md-toolbar>
 
-<div ng-model="joces" ng-repeat="joce in joces" id={{joce.id}}>
+<!-- <div ng-model="joces" ng-repeat="joce in joces" id={{joce.id}}>
   <md-list-item ng-click="go('/{{joce.url}}/{{joce.id}}')">
     <p>{{joce.name}}</p>
     <md-icon md-svg-src="{{joce.src}}" style="color: #673AB7;" ng-click="{{joce.click}}"></md-icon>
     <md-icon md-svg-src="img/icons/settings.svg" ng-click="go('/editJoce/{{joce.id}}'); $event.stopPropagation()" ng-disabled="{{joce.disabled}}" style="color: #673AB7;"></md-icon>
     <md-divider ng-if="!$last"></md-divider>
   </md-list-item>
+</div> -->
+
+<div ng-model="joces" ng-repeat="joce in joces" id={{joce.id}}>
+  <md-menu>
+    <md-list-item ng-click="go('/{{joce.url}}/{{joce.id}}')" hm-hold="$mdOpenMenu()">
+      <p>{{joce.name}}</p>
+      <md-icon md-svg-src="{{joce.src}}" style="color: #FE40FB;" ng-click="{{joce.click}}"></md-icon>
+    </md-list-item>
+    <md-menu-content width="6">
+      <md-menu-item>
+        <md-button>
+          <md-icon md-svg-src="img/icons/bookmark-outline.svg" style="color: #673AB7;"></md-icon>
+          {{ joce.status }}
+        </md-button>
+      </md-menu-item>
+      <md-menu-item>
+        <md-button ng-click="go('/editJoce/{{joce.id}}')">
+          <md-icon md-svg-src="img/icons/settings.svg" style="color: #673AB7;"></md-icon>
+          {{ 'home.menu.config' | translate }}
+        </md-button>
+      </md-menu-item>
+      <md-menu-item>
+        <md-button ng-click="remove('{{joce.id}}',$index)">
+          <md-icon md-svg-src="img/icons/delete.svg" style="color: #F44336;"></md-icon>
+          {{ 'home.menu.remove' | translate }}
+        </md-button>
+      </md-menu-item>
+    </md-menu-content>
+  </md-menu>
 </div>
 
 <md-button ng-click="go('/createJoce')" class="md-raised md-primary">{{ 'home.createNewJoce' | translate }}</md-button>

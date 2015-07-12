@@ -1,6 +1,78 @@
 {
-	"home":{
-		"header":"Your joces",
-		"createNewJoce":"Create a new joce"
-	}
+  "index":{
+    "sidebar":"Menu"
+  },
+  "about":{
+    "sidebar":"About",
+    "header":"About"
+  },
+  "addJocex":{
+    "header":"Add a jocex",
+    "lastest":"Lastest jocex",
+    "addLabel":"Add a new jocex",
+    "add":"Add jocex",
+    "lastestJocex":"There are not any jocex for this joce",
+    "alert":{
+      "title":"You have to wait..",
+      "text1":"You need wait until the ",
+      "text2":" at "
+    }
+  },
+  "createJoce":{
+    "header":"Create a joce",
+    "name":"Name of joce",
+    "number":"Number of jocex on joce",
+    "days":"Days between jocex",
+    "create":"Create joce"
+  },
+  "editJoce":{
+    "header":"Edit joce",
+    "name":"Name of joce",
+    "number":"Number of jocex on joce",
+    "days":"Days between jocex",
+    "update":"Update joce",
+    "remove":"Remove joce",
+    "alert":{
+      "title":"You have finished..",
+      "text":"You can not edit this joce because it was finished"
+    }
+  },
+  "home":{
+    "header":"Your joces",
+    "createNewJoce":"Create a new joce",
+    "toasts":{
+      "finished":"You already was finished this Joce",
+      "waiting":"You need wait for add a new Jocex",
+      "ready":"You can add a new Jocex"
+    },
+    "menu":{
+      "config":"Configurar joce",
+      "status":{
+        "finished":"You already was finished this Joce",
+        "waiting":"You need wait for add a new Jocex",
+        "ready":"You can add a new Jocex"
+      },
+      "remove":"Remove joce"
+    } 
+  },
+  "settings":{
+    "sidebar":"Settings",
+    "header":"Settings",
+    "subheader":"Languages",
+    "english":"English",
+    "spanish":"Spanish",
+    "text":"You can download Joce here",
+    "submit":"Change language"
+  },
+  "shareApp":{
+    "sidebar":"Share app",
+    "header":"Share Joce app",
+    "share":"Share Joce app",
+    "text":"You can download Joce here"
+  },
+  "showJoce":{
+    "header":"Your joce finished",
+    "share":"Share anywhere",
+    "text":"This is your joce finished"
+  }
 }

@@ -49,13 +49,22 @@ ApplicationConfiguration.registerModule('core');
 
 
 angular
-  .module('core', ['ngCordova', 'ngMaterial', 'pascalprecht.translate'])
+  .module('core', ['ngCordova', 
+    'ngMaterial', 
+    'ngCookies', 
+    'pascalprecht.translate',
+    'angular-gestures'])
   .config(['$stateProvider',
     '$urlRouterProvider',
     '$mdThemingProvider',
     '$translateProvider',
-    function($stateProvider, $urlRouterProvider, $mdThemingProvider, $translateProvider) {
-      
+    'hammerDefaultOptsProvider',
+    function($stateProvider, 
+      $urlRouterProvider, 
+      $mdThemingProvider, 
+      $translateProvider,
+      hammerDefaultOptsProvider) {
+
       $mdThemingProvider.theme('default')
         .primaryPalette('deep-purple')
         .accentPalette('purple')
@@ -66,7 +75,8 @@ angular
         .state('home', {
           url: '/',
           templateUrl: 'modules/core/views/home.html',
-          controller: 'HomeController'
+          controller: 'HomeController',
+          service: 'languageService'
         });
       $stateProvider
         .state('createJoce', {
@@ -117,6 +127,43 @@ angular
       });
 
       $translateProvider.preferredLanguage('en');
+      $translateProvider.useCookieStorage();
+      $translateProvider.useSanitizeValueStrategy('sanitize');
+      hammerDefaultOptsProvider.set({
+        recognizers: [
+          [Hammer.Tap,{ event: 'tap'}],
+          [Hammer.Tap, { event: 'doubletap', taps: 2 }, [], ['tap']],
+          [Hammer.Press, { event: 'press', time: 500 }],
+          [Hammer.Pan]
+        ]
+      });
+    }
+  ]);
+'use strict';
+
+angular
+  .module('core')
+  .service('languageService', ['$cookies',
+    function($cookies) {
+            this.getLanguage = function() {
+        var languageCookies = $cookies.get('language');
+        /*languageCookies = false;*/
+        if(languageCookies){
+          return languageCookies;
+        }
+        var navigatorLanguaje = window.navigator.language;
+        navigatorLanguaje = navigatorLanguaje.substring(0, 2);
+        switch (navigatorLanguaje) {
+          case 'en':
+            return 'en';
+            break;
+          case 'es':
+            return 'es';
+            break;
+          default: 
+            return 'en';
+        }
+      };
     }
   ]);
 
@@ -135,8 +182,18 @@ angular
 
 angular
     .module('core')
-    .controller('addJocexController', ['$scope', '$location', '$stateParams', '$timeout', '$mdDialog',
-        function($scope, $location, $stateParams, $timeout, $mdDialog) {
+    .controller('addJocexController', ['$scope', 
+      '$location', 
+      '$stateParams', 
+      '$timeout', 
+      '$mdDialog', 
+      '$translate',
+        function($scope, 
+          $location, 
+          $stateParams, 
+          $timeout, 
+          $mdDialog, 
+          $translate) {
           $scope.go = function (path) {
             $location.path(path);
           };
@@ -243,7 +300,7 @@ angular
                 var lastestJocex = jocexsDb[jocexsDb.length -1];
                 $timeout(function(){
                   if(lastestJocex === undefined){
-                    var jdb = {text:"There aren't any jocex for this joce"};
+                    var jdb = {text:$translate.instant('addJocex.lastestJocex')};
                     $scope.lastestJocex = jdb;
                     $scope.disabled = false;
                   }
@@ -254,8 +311,8 @@ angular
                       var validedTime = new Date(validTime);
                       var date = validedTime.toLocaleDateString();
                       var time_ = validedTime.toLocaleTimeString();
-                      var text1 = "You need wait until the ";
-                      var text2 = " at ";
+                      var text1 = $translate.instant('addJocex.alert.text1');
+                      var text2 = $translate.instant('addJocex.alert.text2');
                       var text = text1.concat(date, text2, time_);
                       $scope.disabled = true;
                       $scope.alertShow = true;
@@ -263,7 +320,7 @@ angular
                       $mdDialog.show(
                         $mdDialog.alert()
                           .parent(angular.element(document.body))
-                          .title('You have to wait..')
+                          .title($translate.instant('addJocex.alert.title'))
                           .content(text)
                           .ariaLabel('Alert Dialog Demo')
                           .ok('Ok')
@@ -287,8 +344,12 @@ angular
 
 angular
     .module('core')
-    .controller('createJoceController', ['$scope', '$location', '$timeout',
-        function($scope, $location, $timeout) {
+    .controller('createJoceController', ['$scope', 
+      '$location', 
+      '$timeout',
+        function($scope, 
+          $location, 
+          $timeout) {
           $scope.submit = function () {
             var joce = {
               name:$scope.name,
@@ -314,8 +375,18 @@ angular
 
 angular
     .module('core')
-    .controller('editJoceController', ['$scope', '$location', '$timeout', '$stateParams', '$mdDialog',
-        function($scope, $location, $timeout, $stateParams, $mdDialog) {
+    .controller('editJoceController', ['$scope', 
+      '$location', 
+      '$timeout', 
+      '$stateParams', 
+      '$mdDialog', 
+      '$translate',
+        function($scope, 
+          $location, 
+          $timeout, 
+          $stateParams, 
+          $mdDialog, 
+          $translate) {
           $scope.submit = function () {
             var joce = {
               name:$scope.name,
@@ -372,14 +443,14 @@ angular
                     $scope.disabled = true;
                     $scope.alertShow = true;
                     $mdDialog.show(
-                        $mdDialog.alert()
-                          .parent(angular.element(document.body))
-                          .title('You have to wait..')
-                          .content('You can not edit thi joce because it was finished')
-                          .ariaLabel('Alert Dialog Demo')
-                          .ok('Ok')
-                          .targetEvent()
-                      );
+                      $mdDialog.alert()
+                        .parent(angular.element(document.body))
+                        .title($translate.instant('editJoce.alert.title'))
+                        .content($translate.instant('editJoce.alert.text'))
+                        .ariaLabel('Alert Dialog Demo')
+                        .ok('Ok')
+                        .targetEvent()
+                    );
                   }
                   else{
                     $scope.disabled = false;
@@ -396,12 +467,26 @@ angular
 
 angular
     .module('core')
-    .controller('HomeController', ['$scope', '$location', '$timeout', '$mdSidenav', '$mdUtil','$mdToast',
-        function($scope, $location, $timeout, $mdSidenav, $mdUtil, $mdToast) {
+    .controller('HomeController', ['$scope', 
+      '$location', 
+      '$timeout', 
+      '$mdSidenav', 
+      '$mdUtil',
+      '$mdToast', 
+      '$translate',
+      '$mdDialog',
+        function($scope, 
+          $location, 
+          $timeout, 
+          $mdSidenav, 
+          $mdUtil, 
+          $mdToast, 
+          $translate,
+          $mdDialog) {
           $scope.showUpdateableToast = function() {
             $mdToast.show(
               $mdToast.simple()
-                .content('You can add a new Jocex')
+                .content($translate.instant('home.toasts.ready'))
                 .position('bottom right')
                 .hideDelay(3000)
             );
@@ -409,7 +494,7 @@ angular
           $scope.showWaitToast = function() {
             $mdToast.show(
               $mdToast.simple()
-                .content('You need wait for add a new Jocex')
+                .content($translate.instant('home.toasts.waiting'))
                 .position('bottom right')
                 .hideDelay(3000)
             );
@@ -417,7 +502,7 @@ angular
           $scope.showFinishedToast = function() {
             $mdToast.show(
               $mdToast.simple()
-                .content('You already was finished this Joce')
+                .content($translate.instant('home.toasts.finished'))
                 .position('bottom right')
                 .hideDelay(3000)
             );
@@ -433,6 +518,20 @@ angular
           $scope.go = function (path) {
             $mdSidenav('left').close();
             $location.path(path);
+          };
+          $scope.remove = function (id, index) {
+            var dbSize = 5 * 1024 * 1024; // 5Mb
+            var db = window.openDatabase("joceTest", "1.0", "Joce Test DB", dbSize);
+            db.transaction(function (tx) {
+              tx.executeSql("CREATE TABLE IF NOT EXISTS joce(id INTEGER PRIMARY KEY ASC, name TEXT, number INT, time INT, finished TEXT DEFAULT 'false', until TIMESTAMP)", []);
+            });
+            db.transaction(function (tx) {
+              tx.executeSql('DELETE FROM joce WHERE id = ?', [id]);
+            });
+            db.transaction(function (tx) {
+              tx.executeSql('DELETE FROM jocex WHERE joceId = ?', [id]);
+            });
+            $scope.joces.splice(index, 1);
           };
           function getJoces (){
             var dbSize = 5 * 1024 * 1024; // 5Mb
@@ -452,16 +551,19 @@ angular
                     jocesDb[i].src = "img/icons/checkbox-marked-circle.svg";
                     jocesDb[i].click = "showFinishedToast(); $event.stopPropagation()";
                     jocesDb[i].url = "showJoce";
+                    jocesDb[i].status = $translate.instant('home.menu.status.finished');
                   }
                   else if (now >= until){
                     jocesDb[i].src = "img/icons/plus-circle-outline.svg";
                     jocesDb[i].click = "showUpdateableToast(); $event.stopPropagation()";
                     jocesDb[i].url = "addJocex";
+                    jocesDb[i].status = $translate.instant('home.menu.status.ready');
                   }
                   else{
                     jocesDb[i].src = "img/icons/clock.svg";
                     jocesDb[i].click = "showWaitToast(); $event.stopPropagation()";
                     jocesDb[i].url = "addJocex";
+                    jocesDb[i].status = $translate.instant('home.menu.status.waiting');
                   }
                 }
                 $timeout(function(){
@@ -478,10 +580,26 @@ angular
 
 angular
     .module('core')
-    .controller('settingController', ['$scope', '$location', '$stateParams', '$timeout',
-        function($scope, $location, $stateParams, $timeout) {
-          $scope.shareAnywhere = function() {
-            $cordovaSocialSharing.share('You can download Joce here', null, null, 'http://www.google.com');
+    .controller('settingController', ['$scope', 
+      '$location', 
+      '$stateParams', 
+      '$timeout', 
+      '$translate', 
+      '$cookies',
+      'languageService',
+        function($scope, 
+          $location, 
+          $stateParams, 
+          $timeout, 
+          $translate, 
+          $cookies,
+          languageService) {
+          $scope.data = {
+            language : languageService.getLanguage()
+          };
+          $scope.submit = function (){
+            $cookies.put('language', $scope.data.language);
+            $translate.use($scope.data.language);
           }
         }
     ]);
@@ -489,10 +607,20 @@ angular
 
 angular
     .module('core')
-    .controller('shareAppController', ['$scope', '$location', '$stateParams', '$timeout', '$cordovaSocialSharing',
-        function($scope, $location, $stateParams, $timeout, $cordovaSocialSharing) {
+    .controller('shareAppController', ['$scope', 
+    	'$location', 
+    	'$stateParams', 
+    	'$timeout', 
+    	'$cordovaSocialSharing', 
+    	'$translate',
+        function($scope, 
+        	$location, 
+        	$stateParams, 
+        	$timeout, 
+        	$cordovaSocialSharing, 
+        	$translate) {
           $scope.shareAnywhere = function() {
-            $cordovaSocialSharing.share('You can download Joce here', null, null, 'http://www.google.com');
+            $cordovaSocialSharing.share($translate.instant('shareApp.text'), null, null, 'http://www.google.com');
           }
         }
     ]);
@@ -500,8 +628,18 @@ angular
 
 angular
     .module('core')
-    .controller('showJoceController', ['$scope', '$location', '$stateParams', '$timeout', '$cordovaSocialSharing',
-        function($scope, $location, $stateParams, $timeout, $cordovaSocialSharing) {
+    .controller('showJoceController', ['$scope', 
+      '$location', 
+      '$stateParams', 
+      '$timeout', 
+      '$cordovaSocialSharing', 
+      '$translate',
+        function($scope, 
+          $location, 
+          $stateParams, 
+          $timeout, 
+          $cordovaSocialSharing, 
+          $translate) {
           $scope.shareAnywhere = function() {
             var dbSize = 5 * 1024 * 1024; // 5Mb
             var db = window.openDatabase("joceTest", "1.0", "Joce Test DB", dbSize);
@@ -517,7 +655,9 @@ angular
                 }
                 $timeout(function(){
                   var text = jocexsTextDb.join(" ");
-                  $cordovaSocialSharing.share(text, "This is your joce finished");
+                  var textList = [text, $translate.instant('showJoce.text')];
+                  text = textList.join(", ");
+                  $cordovaSocialSharing.share(text);
                 });
               }, null);
             });

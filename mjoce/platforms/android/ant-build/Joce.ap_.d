@@ -44,11 +44,13 @@
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/loaders \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/icons \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/loaders/loader.gif \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/icons/delete.svg \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/icons/settings.svg \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/icons/checkbox-marked-circle.svg \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/icons/clock.svg \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/icons/share-variant.svg \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/icons/plus-circle-outline.svg \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/icons/bookmark-outline.svg \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/icons/ic_view_headline_48px.svg \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/icons/menu.svg \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/scripts/custom.js \

@@ -1,22 +1,22 @@
 <md-toolbar class="md-accent">
   <div class="md-toolbar-tools">
-    <h2 class="md-flex">Edit joce</h2>
+    <h2 class="md-flex">{{ 'editJoce.header' | translate }}</h2>
   </div>
 </md-toolbar>
 
 <form name="jocexForm" ng-submit="submit()">
   <md-input-container>
-    <label>Name of joce</label>
+    <label>{{ 'editJoce.name' | translate }}</label>
     <input md-maxlength="15" required ng-model="name" ng-disabled="disabled">
   </md-input-container>
   <md-input-container>
-    <label>Number of jocex on joce</label>
+    <label>{{ 'editJoce.number' | translate }}</label>
     <input required type="number" ng-model="number" ng-disabled="disabled">
   </md-input-container>
   <md-input-container>
-    <label>Days between jocex</label>
+    <label>{{ 'editJoce.days' | translate }}</label>
     <input required type="number" ng-model="time" ng-disabled="disabled">
   </md-input-container>
-  <md-button type="submit" class="md-raised md-primary" ng-disabled="disabled">Update joce</md-button>
-  <md-button type="submit" class="md-raised md-warn" ng-click="remove()">Remove joce</md-button>
+  <md-button type="submit" class="md-raised md-primary" ng-disabled="disabled">{{ 'editJoce.update' | translate }}</md-button>
+  <md-button type="submit" class="md-raised md-warn" ng-click="remove()">{{ 'editJoce.remove' | translate }}</md-button>
 </form>

@@ -1,18 +1,18 @@
 <md-toolbar class="md-accent">
   <div class="md-toolbar-tools">
-    <h2 class="md-flex">Add a jocex</h2>
+    <h2 class="md-flex">{{ 'addJocex.header' | translate }}</h2>
   </div>
 </md-toolbar>
 
-<md-subheader class="md-primary">Lastest jocex</md-subheader>
+<md-subheader class="md-primary">{{ 'addJocex.lastest' | translate }}</md-subheader>
 <md-whiteframe class="md-whiteframe-z1" layout layout-align="left left">
   <span class="no-select" ng-model="lastestJocex" id={{lastestJocex.id}} style="padding: 20px;">{{lastestJocex.text}}</span>
 </md-whiteframe>
 
 <form name="jocexForm" ng-submit="submit()">
   <md-input-container>
-    <label>Add a new jocex</label>
+    <label>{{ 'addJocex.addLabel' | translate }}</label>
     <input required ng-model="jocex" ng-disabled="disabled">
   </md-input-container>
-  <md-button type="submit" ng-disabled="disabled" class="md-raised md-primary">Add jocex</md-button>
+  <md-button type="submit" ng-disabled="disabled" class="md-raised md-primary">{{ 'addJocex.add' | translate }}</md-button>
 </form>
