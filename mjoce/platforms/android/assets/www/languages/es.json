@@ -46,7 +46,7 @@
       "ready":"Puedes agregar un nuevo jocex"
     },
     "menu":{
-      "config":"Config joce",
+      "config":"Configurar joce",
       "status":{
         "finished":"Ya has terminado ese joce",
         "waiting":"Tienes que esperar para agregar un nuevo jocex",
