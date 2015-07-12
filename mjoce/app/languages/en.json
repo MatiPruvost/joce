@@ -4,7 +4,15 @@
   },
   "about":{
     "sidebar":"About",
-    "header":"About"
+    "header":"About",
+    "subheader":{
+      "joce":"About joce",
+      "us":"About us"
+    },
+    "paragraph":{
+      "joce":"Joce is an app to play exquisite corpse with oneself",
+      "us":""
+    }
   },
   "addJocex":{
     "header":"Add a jocex",
@@ -68,7 +76,13 @@
     "sidebar":"Share app",
     "header":"Share Joce app",
     "share":"Share Joce app",
-    "text":"You can download Joce here"
+    "text":"You can download Joce here",
+    "subheader":{
+      "share":"Share Joce app"
+    },
+    "paragraph":{
+      "share":"If you want share Joce app with your friens tap the follow button"
+    }
   },
   "showJoce":{
     "header":"Your joce finished",
