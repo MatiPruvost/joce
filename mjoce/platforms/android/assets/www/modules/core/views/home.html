@@ -11,12 +11,11 @@
       <md-icon md-svg-src="{{joce.src}}" style="color: #FE40FB;" ng-click="{{joce.click}};{{joce.stopPropagation}}"></md-icon>
     </md-list-item>
     <md-menu-content width="6">
-      <md-menu-item>
-        <md-button ng-click="go('/{{joce.url}}/{{joce.id}}')">
-          <md-icon md-svg-src="img/icons/bookmark-outline.svg" style="color: #673AB7;"></md-icon>
-          {{ joce.status }}
-        </md-button>
-      </md-menu-item>
+      <p>
+        <span style="margin-left: 5px;color: #673AB7;font-weight: bold; padding: 5px;">
+          {{ 'home.menu.title' | translate }}
+        </span>
+      </p>
       <md-menu-item>
         <md-button ng-click="go('/editJoce/{{joce.id}}')">
           <md-icon md-svg-src="img/icons/settings.svg" style="color: #673AB7;"></md-icon>

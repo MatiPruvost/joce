@@ -48,12 +48,27 @@
   "home":{
     "header":"Your joces",
     "createNewJoce":"Create a new joce",
-    "toasts":{
-      "finished":"You already was finished this Joce",
-      "waiting":"You need wait for add a new Jocex",
-      "ready":"You can add a new Jocex"
+    "alerts":{
+      "finished":{
+        "title":"Finished joce",
+        "content":"You already was finished this Joce",
+        "ok":"Go to the joce",
+        "cancel":"OK"
+      },
+      "waiting":{
+        "title":"Wait",
+        "content":"You need wait for add a new Jocex",
+        "ok":"OK"
+      },
+      "ready":{
+        "title":"Updatable joce",
+        "content":"You can add a new Jocex",
+        "ok":"Add a new jocex",
+        "cancel":"OK"
+      }
     },
     "menu":{
+      "title":"Joce",
       "config":"Configurar joce",
       "status":{
         "finished":"You already was finished this Joce",

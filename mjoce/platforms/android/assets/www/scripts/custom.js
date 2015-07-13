@@ -483,36 +483,46 @@ angular
           $mdToast, 
           $translate,
           $mdDialog) {
-          $scope.showUpdateableToast = function() {
-            $mdToast.show(
-              $mdToast.simple()
-                .content($translate.instant('home.toasts.ready'))
-                .position('bottom right')
-                .hideDelay(3000)
-            );
+          $scope.showUpdateableToast = function(id) {
+            var confirm = $mdDialog.confirm()
+              .parent(angular.element(document.body))
+              .title($translate.instant('home.alerts.ready.title'))
+              .content($translate.instant('home.alerts.ready.content'))
+              .ok($translate.instant('home.alerts.ready.ok'))
+              .cancel($translate.instant('home.alerts.ready.cancel'))
+              .targetEvent();
+            $mdDialog.show(confirm).then(function() {
+              $location.path("/addJocex/"+id);
+            });
           };
           $scope.showWaitToast = function() {
-            $mdToast.show(
-              $mdToast.simple()
-                .content($translate.instant('home.toasts.waiting'))
-                .position('bottom right')
-                .hideDelay(3000)
+            $mdDialog.show(
+              $mdDialog.alert()
+                .parent(angular.element(document.body))
+                .title($translate.instant('home.alerts.waiting.title'))
+                .content($translate.instant('home.alerts.waiting.content'))
+                .ok($translate.instant('home.alerts.waiting.ok'))
+                .targetEvent()
             );
           };
-          $scope.showFinishedToast = function() {
-            $mdToast.show(
-              $mdToast.simple()
-                .content($translate.instant('home.toasts.finished'))
-                .position('bottom right')
-                .hideDelay(3000)
-            );
+          $scope.showFinishedToast = function(id) {
+            var confirm = $mdDialog.confirm()
+              .parent(angular.element(document.body))
+              .title($translate.instant('home.alerts.finished.title'))
+              .content($translate.instant('home.alerts.finished.content'))
+              .ok($translate.instant('home.alerts.finished.ok'))
+              .cancel($translate.instant('home.alerts.finished.cancel'))
+              .targetEvent();
+            $mdDialog.show(confirm).then(function() {
+              $location.path("/showJoce/"+id);
+            });
           };
           $scope.toggleLeft = buildToggler('left');
           function buildToggler(navID) {
             var debounceFn =  $mdUtil.debounce(function(){
-                  $mdSidenav(navID)
-                    .toggle();
-                },300);
+              $mdSidenav(navID)
+                .toggle();
+            },300);
             return debounceFn;
           }
           $scope.go = function (path) {
@@ -549,20 +559,20 @@ angular
                   var until = new Date(jocesDb[i].until);
                   if (jocesDb[i].finished == "true"){
                     jocesDb[i].src = "img/icons/checkbox-marked-circle.svg";
-                    jocesDb[i].click = "showFinishedToast()";
+                    jocesDb[i].click = "showFinishedToast("+jocesDb[i].id+")";
                     jocesDb[i].stopPropagation = "$event.stopPropagation()";
                     jocesDb[i].url = "showJoce";
                     jocesDb[i].status = $translate.instant('home.menu.status.finished');
                   }
                   else if (now >= until){
                     jocesDb[i].src = "img/icons/plus-circle-outline.svg";
-                    jocesDb[i].click = "showUpdateableToast(); $event.stopPropagation()";
+                    jocesDb[i].click = "showUpdateableToast("+jocesDb[i].id+"); $event.stopPropagation()";
                     jocesDb[i].url = "addJocex";
                     jocesDb[i].status = $translate.instant('home.menu.status.ready');
                   }
                   else{
                     jocesDb[i].src = "img/icons/clock.svg";
-                    jocesDb[i].click = "showWaitToast(); $event.stopPropagation()";
+                    jocesDb[i].click = "showWaitToast("+jocesDb[i].id+"); $event.stopPropagation()";
                     jocesDb[i].url = "addJocex";
                     jocesDb[i].status = $translate.instant('home.menu.status.waiting');
                   }

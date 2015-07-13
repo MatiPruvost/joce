@@ -48,12 +48,27 @@
   "home":{
     "header":"Tus joces",
     "createNewJoce":"Crear un nuevo joce",
-    "toasts":{
-      "finished":"Ya has terminado ese joce",
-      "waiting":"Tienes que esperar para agregar un nuevo jocex",
-      "ready":"Puedes agregar un nuevo jocex"
+    "alerts":{
+      "finished":{
+        "title":"Joce terminado",
+        "content":"Ya haz terminado este joce",
+        "ok":"Ir al joce",
+        "cancel":"OK"
+      },
+      "waiting":{
+        "title":"Esperar",
+        "content":"Tienes que esperar para agregar un nuevo jocex",
+        "ok":"OK"
+      },
+      "ready":{
+        "title":"Joce actualizable",
+        "content":"Puedes agregar un nuevo jocex",
+        "ok":"Agregar un nuevo jocex",
+        "cancel":"OK"
+      }
     },
     "menu":{
+      "title":"Joce",
       "config":"Configurar joce",
       "status":{
         "finished":"Ya has terminado ese joce",
