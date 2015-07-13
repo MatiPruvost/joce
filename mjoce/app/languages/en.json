@@ -68,6 +68,7 @@
       }
     },
     "menu":{
+      "title":"Joce",
       "config":"Configurar joce",
       "status":{
         "finished":"You already was finished this Joce",
