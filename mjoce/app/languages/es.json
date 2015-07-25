@@ -78,6 +78,14 @@
       "remove":"Eliminar joce"
     }
   },
+  "names":{
+    "App":"Wimy",
+    "app":"wimy",
+    "Game":"Wimy",
+    "game":"wimy",
+    "OneThing":"Wimeen",
+    "oneThing":"wimeen"
+  },
   "settings":{
     "sidebar":"Configuraciones",
     "header":"Configuraciones",
