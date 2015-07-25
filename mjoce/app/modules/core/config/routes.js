@@ -98,7 +98,6 @@ angular
 
       $translateProvider.preferredLanguage('en');
       $translateProvider.useCookieStorage();
-      $translateProvider.useSanitizeValueStrategy('sanitize');
       hammerDefaultOptsProvider.set({
         recognizers: [
           [Hammer.Tap,{ event: 'tap'}],
