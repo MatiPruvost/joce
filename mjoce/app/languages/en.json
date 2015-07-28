@@ -6,20 +6,20 @@
     "sidebar":"About",
     "header":"About",
     "subheader":{
-      "joce":"About joce",
+      "joce":"About Wimy",
       "us":"About us"
     },
     "paragraph":{
-      "joce":"Joce is an app to play exquisite corpse with oneself",
+      "joce":"Wimy is an app to play exquisite corpse with oneself",
       "us":""
     }
   },
   "addJocex":{
-    "header":"Add a jocex",
-    "lastest":"Lastest jocex",
-    "addLabel":"Add a new jocex",
-    "add":"Add jocex",
-    "lastestJocex":"There are not any jocex for this joce",
+    "header":"Add a wimeen",
+    "lastest":"Lastest wimeen",
+    "addLabel":"Add a new wimeen",
+    "add":"Add wimeen",
+    "lastestJocex":"There are not any wimeen for this wimy",
     "alert":{
       "title":"You have to wait..",
       "text1":"You need wait until the ",
@@ -27,55 +27,55 @@
     }
   },
   "createJoce":{
-    "header":"Create a joce",
-    "name":"Name of joce",
-    "number":"Number of jocex on joce",
-    "days":"Days between jocex",
-    "create":"Create joce"
+    "header":"Create a wimy",
+    "name":"Name of wimy",
+    "number":"Number of wimeen on wimy",
+    "days":"Days between wimeens",
+    "create":"Create wimy"
   },
   "editJoce":{
-    "header":"Edit joce",
-    "name":"Name of joce",
-    "number":"Number of jocex on joce",
-    "days":"Days between jocex",
-    "update":"Update joce",
-    "remove":"Remove joce",
+    "header":"Edit the wimy",
+    "name":"Name of the wimy",
+    "number":"Number of wimeen on wimy",
+    "days":"Days between wimeen",
+    "update":"Update wimy",
+    "remove":"Remove wimy",
     "alert":{
       "title":"You have finished..",
-      "text":"You can not edit this joce because it was finished"
+      "text":"You can not edit this wimy because it was finished"
     }
   },
   "home":{
-    "header":"Your joces",
-    "createNewJoce":"Create a new joce",
+    "header":"Your wimies",
+    "createNewJoce":"Create a new wimy",
     "alerts":{
       "finished":{
-        "title":"Finished joce",
-        "content":"You already was finished this Joce",
-        "ok":"Go to the joce",
+        "title":"Wimy finished",
+        "content":"You already was finished this wimy",
+        "ok":"Go to the wimy",
         "cancel":"OK"
       },
       "waiting":{
         "title":"Wait",
-        "content":"You need wait for add a new Jocex",
+        "content":"You need wait for add a new wimeen",
         "ok":"OK"
       },
       "ready":{
-        "title":"Updatable joce",
-        "content":"You can add a new Jocex",
-        "ok":"Add a new jocex",
+        "title":"Wimy updatable",
+        "content":"You can add a new wimeen",
+        "ok":"Add a new wimeen",
         "cancel":"OK"
       }
     },
     "menu":{
-      "title":"Joce",
-      "config":"Configurar joce",
+      "title":"Wimy",
+      "config":"Configure the wimy",
       "status":{
-        "finished":"You already was finished this Joce",
-        "waiting":"You need wait for add a new Jocex",
-        "ready":"You can add a new Jocex"
+        "finished":"You already was finished this wimy",
+        "waiting":"You need wait for add a new wimeen",
+        "ready":"You can add a new wimeen"
       },
-      "remove":"Remove joce"
+      "remove":"Remove the wimy"
     } 
   },
   "names":{
@@ -92,24 +92,24 @@
     "subheader":"Languages",
     "english":"English",
     "spanish":"Spanish",
-    "text":"You can download Joce here",
+    "text":"You can download Wimy app here",
     "submit":"Change language"
   },
   "shareApp":{
     "sidebar":"Share app",
-    "header":"Share Joce app",
-    "share":"Share Joce app",
-    "text":"You can download Joce here",
+    "header":"Share Wimy app",
+    "share":"Share Wimy app",
+    "text":"You can download Wimy app here",
     "subheader":{
-      "share":"Share Joce app"
+      "share":"Share Wimy app"
     },
     "paragraph":{
-      "share":"If you want share Joce app with your friens tap the follow button"
+      "share":"If you want share Wimy app with your friens tap the follow button"
     }
   },
   "showJoce":{
-    "header":"Your joce finished",
+    "header":"Your wimy finished",
     "share":"Share anywhere",
-    "text":"This is your joce finished"
+    "text":"This is your wimy finished"
   }
 }
