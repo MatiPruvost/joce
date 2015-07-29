@@ -4,11 +4,15 @@
   </div>
 </md-toolbar>
 
+<md-button ng-click="go('/createJoce')" class="md-fab md-hue-2 md-primary md-fab-top-right" aria-label="Profile">
+  <md-icon md-svg-src="img/icons/plus.svg"></md-icon>
+</md-button>
+
 <div ng-model="joces" ng-repeat="joce in joces" id={{joce.id}}>
   <md-menu>
     <md-list-item ng-click="go('/{{joce.url}}/{{joce.id}}')" hm-hold="$mdOpenMenu()">
-      <p>{{joce.name}}</p>
       <md-icon md-svg-src="{{joce.src}}" style="color: #FE40FB;" ng-click="{{joce.click}};{{joce.stopPropagation}}"></md-icon>
+      <p>{{joce.name}}</p>
     </md-list-item>
     <md-menu-content width="6">
       <p>
@@ -31,5 +35,3 @@
     </md-menu-content>
   </md-menu>
 </div>
-
-<md-button ng-click="go('/createJoce')" class="md-raised md-primary">{{ 'home.createNewJoce' | translate }}</md-button>
