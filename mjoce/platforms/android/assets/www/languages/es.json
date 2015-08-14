@@ -6,20 +6,20 @@
     "sidebar":"Acerca",
     "header":"Acerca",
     "subheader":{
-      "joce":"Acerca de joce",
+      "joce":"Acerca de wimy",
       "us":"Acerca nuestro"
     },
     "paragraph":{
-      "joce":"Joce es una app para jugar cadaver exquisito con uno mismo",
+      "joce":"Wimy es una app para jugar cadaver exquisito con uno mismo",
       "us":""
     }
   },
   "addJocex":{
-    "header":"Agregar un jocex",
-    "lastest":"Último jocex",
-    "addLabel":"Agregar un nuevo jocex",
-    "add":"Agregar jocex",
-    "lastestJocex":"No hay ningún jocex en este joce",
+    "header":"Agregar un wimeen",
+    "lastest":"Último wimeen",
+    "addLabel":"Agregar un nuevo wimeen",
+    "add":"Agregar wimeen",
+    "lastestJocex":"No hay ningún wimeen en este wimy",
     "alert":{
       "title":"Tienes que esperar..",
       "text1":"Tienes que esperar hasta el ",
@@ -27,56 +27,64 @@
     }
   },
   "createJoce":{
-    "header":"Crear un joce",
-    "name":"Nombre del joce",
-    "number":"Número de jocex en el joce",
-    "days":"Días entre jocex",
-    "create":"Crear joce"
+    "header":"Crear un wimy",
+    "name":"Nombre del wimy",
+    "number":"Número de wimeen en el wimy",
+    "days":"Días entre wimeen",
+    "create":"Crear wimy"
   },
   "editJoce":{
-    "header":"Editar joce",
-    "name":"Nombre del joce",
-    "number":"Número de jocex en el joce",
-    "days":"Días entre jocex",
-    "update":"Actualizar joce",
-    "remove":"Eliminar joce",
+    "header":"Editar el wimy",
+    "name":"Nombre del wimy",
+    "number":"Número de wimeen en el wimy",
+    "days":"Días entre wimeens",
+    "update":"Actualizar wimy",
+    "remove":"Eliminar wimy",
     "alert":{
       "title":"Ya has terminado..",
-      "text":"No puedes editar este joce porque ya fue finalizado"
+      "text":"No puedes editar este wimy porque ya fue finalizado"
     }
   },
   "home":{
-    "header":"Tus joces",
-    "createNewJoce":"Crear un nuevo joce",
+    "header":"Tus wimies",
+    "createNewJoce":"Crear un nuevo wimy",
     "alerts":{
       "finished":{
-        "title":"Joce terminado",
-        "content":"Ya haz terminado este joce",
-        "ok":"Ir al joce",
+        "title":"Wimy terminado",
+        "content":"Ya haz terminado este wimy",
+        "ok":"Ir al wimy",
         "cancel":"OK"
       },
       "waiting":{
         "title":"Esperar",
-        "content":"Tienes que esperar para agregar un nuevo jocex",
+        "content":"Tienes que esperar para agregar un nuevo wimeen",
         "ok":"OK"
       },
       "ready":{
-        "title":"Joce actualizable",
-        "content":"Puedes agregar un nuevo jocex",
-        "ok":"Agregar un nuevo jocex",
+        "title":"Wimy actualizable",
+        "content":"Puedes agregar un nuevo wimeen",
+        "ok":"Agregar un nuevo wimeen",
         "cancel":"OK"
       }
     },
     "menu":{
-      "title":"Joce",
-      "config":"Configurar joce",
+      "title":"Wimy",
+      "config":"Configurar wimy",
       "status":{
-        "finished":"Ya has terminado ese joce",
-        "waiting":"Tienes que esperar para agregar un nuevo jocex",
-        "ready":"Puedes agregar un nuevo jocex"
+        "finished":"Ya has terminado ese wimy",
+        "waiting":"Tienes que esperar para agregar un nuevo wimeen",
+        "ready":"Puedes agregar un nuevo wimeen"
       },
-      "remove":"Eliminar joce"
+      "remove":"Eliminar wimy"
     }
+  },
+  "names":{
+    "App":"Wimy",
+    "app":"wimy",
+    "Game":"Wimy",
+    "game":"wimy",
+    "OneThing":"Wimeen",
+    "oneThing":"wimeen"
   },
   "settings":{
     "sidebar":"Configuraciones",
@@ -84,24 +92,57 @@
     "subheader":"Lenguajes",
     "english":"Inglés",
     "spanish":"Español",
-    "text":"Puedes descargar Joce desde aquí",
+    "text":"Puedes descargar wimy app desde aquí",
     "submit":"Cambiar lenguaje"
   },
   "shareApp":{
     "sidebar":"Copartir app",
-    "header":"Compartir app Joce",
-    "share":"Compartir app Joce",
-    "text":"Puedes descargar Joce desde aquí",
+    "header":"Compartir Wimy app",
+    "share":"Compartir Wimy app",
+    "text":"Puedes descargar Wimy app desde aquí",
     "subheader":{
-      "share":"Compartir app Joce"
+      "share":"Compartir Wimy app"
     },
     "paragraph":{
-      "share":"Si quieres compartir la aplicación Joce con tus amigos apretá el siguiente botón"
+      "share":"Si quieres compartir la aplicación Wimy con tus amigos apretá el siguiente botón"
     }
   },
   "showJoce":{
-    "header":"Tu joce finalizado",
-    "share":"Compartir joce",
-    "text":"Este es tu joce finalizado"
+    "header":"Tu wimy finalizado",
+    "share":"Compartir wimy",
+    "text":"Este es tu wimy finalizado"
+  },
+  "tutorial":{
+    "sidebar":"Tutorial",
+    "header":"Tutorial",
+    "subheader":{
+      "exquisiteCorpse":"¿Qué es un cadaver exquisito?",
+      "wimy":"¿Qué es Wimy?",
+      "wimeen":"¿Qué es un wimeen?",
+      "play":"¿Cómo jugar?"
+    },
+    "paragraph":{
+      "exquisiteCorpse":"Cadaver exquisito es un método para crear una colección de oraciones usando un estilo especial. Usualmente puedes jugar con un grupo de personas de una forma colaborativa y finalmente obtener una composición que te ayuda a inspirar una canción, poema, cuento corto y otas más.",
+      "wimy":"Wimy es una composición que puedes hacer a través del tiempo. Es un cadaver exquisito que puedes jugar contigo mismo.",
+      "wimeen":"Wimeen es cada oración incluida en un wimy",
+      "play1":"Tienes que crear un wimy y agregar:",
+      "play1-1":{
+        "name":"Nombre:",
+        "text":"Nombre que eliges para tu wimy."
+      },
+      "play1-2":{
+        "name":"Número de wimeens: ",
+        "text":"Cuantos wimeens quieres incluir en tu wimy."
+      },
+      "play1-3":{
+        "name":"Días entre wimeens: ",
+        "text":"Cuantos días quieres esperar para agregar un nuevo wimeen a tu wimy."
+      },
+      "play2":"Después puedes agregar un nuevo wimeen a tu wimy creado.",
+      "play3":" Tienes solo dos restricciones:",
+      "play3-1":"Solo puedes ver el último wimeen.",
+      "play3-2":"Puedes agregar un nuevo wimeen después de que pase el timpo que configuraste.",
+      "play4":"Cuando termines tu wimy lo podrás compartir."
+    }
   }
 }

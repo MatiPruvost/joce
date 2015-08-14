@@ -79,22 +79,10 @@ angular
           service: 'languageService'
         });
       $stateProvider
-        .state('createJoce', {
-          url: '/createJoce',
-          templateUrl: 'modules/core/views/createJoce.html',
-          controller: 'createJoceController'
-        });
-      $stateProvider
-        .state('showJoce', {
-          url: '/showJoce/:joceId',
-          templateUrl: 'modules/core/views/showJoce.html',
-          controller: 'showJoceController'
-        });
-      $stateProvider
-        .state('editJoce', {
-          url: '/editJoce/:joceId',
-          templateUrl: 'modules/core/views/editJoce.html',
-          controller: 'editJoceController'
+        .state('about', {
+          url: '/about',
+          templateUrl: 'modules/core/views/about.html',
+          controller: 'aboutController'
         });
       $stateProvider
         .state('addJocex', {
@@ -103,22 +91,39 @@ angular
           controller: 'addJocexController'
         });
       $stateProvider
+        .state('createJoce', {
+          url: '/createJoce',
+          templateUrl: 'modules/core/views/createJoce.html',
+          controller: 'createJoceController'
+        });
+      $stateProvider
+        .state('editJoce', {
+          url: '/editJoce/:joceId',
+          templateUrl: 'modules/core/views/editJoce.html',
+          controller: 'editJoceController'
+        });
+      $stateProvider
         .state('settings', {
           url: '/settings',
           templateUrl: 'modules/core/views/setting.html',
           controller: 'settingController'
         });
       $stateProvider
-        .state('about', {
-          url: '/about',
-          templateUrl: 'modules/core/views/about.html',
-          controller: 'aboutController'
-        });
-      $stateProvider
         .state('shareApp', {
           url: '/shareApp',
           templateUrl: 'modules/core/views/shareApp.html',
           controller: 'shareAppController'
+        });
+      $stateProvider
+        .state('showJoce', {
+          url: '/showJoce/:joceId',
+          templateUrl: 'modules/core/views/showJoce.html',
+          controller: 'showJoceController'
+        });
+      $stateProvider
+        .state('tutorial', {
+          url: '/tutorial',
+          templateUrl: 'modules/core/views/tutorial.html'
         });
 
       $translateProvider.useStaticFilesLoader({
@@ -128,6 +133,7 @@ angular
 
       $translateProvider.preferredLanguage('en');
       $translateProvider.useCookieStorage();
+      $translateProvider.useSanitizeValueStrategy(null);
       hammerDefaultOptsProvider.set({
         recognizers: [
           [Hammer.Tap,{ event: 'tap'}],
@@ -172,9 +178,6 @@ angular
     .module('core')
     .controller('aboutController', ['$scope', '$location', '$stateParams', '$timeout', '$cordovaSocialSharing',
         function($scope, $location, $stateParams, $timeout, $cordovaSocialSharing) {
-          $scope.shareAnywhere = function() {
-            $cordovaSocialSharing.share('You can download Joce here', null, null, 'http://www.google.com');
-          }
         }
     ]);
 'use strict';
@@ -482,6 +485,12 @@ angular
           $mdToast, 
           $translate,
           $mdDialog) {
+          $scope.createWimyButton=false;
+          $scope.$on('$destroy', function( event ) {
+            $scope.createWimyButton=true;
+            console.log("JSA")
+            console.log($scope.createWimyButton)
+          });
           $scope.showUpdateableToast = function(id) {
             var confirm = $mdDialog.confirm()
               .parent(angular.element(document.body))

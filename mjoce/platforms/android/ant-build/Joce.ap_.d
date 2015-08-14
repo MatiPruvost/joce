@@ -37,7 +37,6 @@
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/languages \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/cordova_plugins.js \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules \
-/home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/fonts \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/plugins \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/styles/vendor.css \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/styles/custom.css \
@@ -47,6 +46,7 @@
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/icons/delete.svg \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/icons/settings.svg \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/icons/checkbox-marked-circle.svg \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/icons/plus.svg \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/icons/clock.svg \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/icons/share-variant.svg \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/img/icons/plus-circle-outline.svg \
@@ -64,13 +64,10 @@
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views/about.html \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views/editJoce.html \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views/createJoce.html \
+/home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views/tutorial.html \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views/setting.html \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views/addJocex.html \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/modules/core/views/shareApp.html \
-/home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/fonts/glyphicons-halflings-regular.ttf \
-/home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/fonts/glyphicons-halflings-regular.eot \
-/home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/fonts/glyphicons-halflings-regular.svg \
-/home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/fonts/glyphicons-halflings-regular.woff \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/plugins/nl.x-services.plugins.socialsharing \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/plugins/cordova-plugin-splashscreen \
 /home/vonlenska/repositories/me/joce/mjoce/platforms/android/assets/www/plugins/nl.x-services.plugins.socialsharing/www \
