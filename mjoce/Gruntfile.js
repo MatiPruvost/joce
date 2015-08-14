@@ -356,21 +356,14 @@ module.exports = function(grunt) {
                         'index.html',
                         'modules/*/views/*.html',
                         'img/{,*/}*.{webp}',
-                        'fonts/*'
+                        'fonts/*',
+                        'languages/*'
                     ]
                 }, {
                     expand: true,
                     cwd: '.tmp/images',
                     dest: '<%= yeoman.dist %>/img',
                     src: ['generated/*']
-                },
-                // Added for me http://stackoverflow.com/questions/21932451/assets-missing-in-angular-application-built-using-grunt
-                {
-                  expand: true,
-                  flatten: true,
-                  cwd: '<%= yeoman.app %>',
-                  dest: '<%= yeoman.dist %>/fonts',
-                  src: ['lib/bootstrap/fonts/*.*']
                 }]
             },
             styles: {
