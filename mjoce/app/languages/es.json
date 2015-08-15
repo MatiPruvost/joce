@@ -111,5 +111,38 @@
     "header":"Tu wimy finalizado",
     "share":"Compartir wimy",
     "text":"Este es tu wimy finalizado"
+  },
+  "tutorial":{
+    "sidebar":"Tutorial",
+    "header":"Tutorial",
+    "subheader":{
+      "exquisiteCorpse":"¿Qué es un cadaver exquisito?",
+      "wimy":"¿Qué es Wimy?",
+      "wimeen":"¿Qué es un wimeen?",
+      "play":"¿Cómo jugar?"
+    },
+    "paragraph":{
+      "exquisiteCorpse":"Cadaver exquisito es un método para crear una colección de oraciones usando un estilo especial. Usualmente puedes jugar con un grupo de personas de una forma colaborativa y finalmente obtener una composición que te ayuda a inspirar una canción, poema, cuento corto y otas más.",
+      "wimy":"Wimy es una composición que puedes hacer a través del tiempo. Es un cadaver exquisito que puedes jugar contigo mismo.",
+      "wimeen":"Wimeen es cada oración incluida en un wimy",
+      "play1":"Tienes que crear un wimy y agregar:",
+      "play1-1":{
+        "name":"Nombre:",
+        "text":"Nombre que eliges para tu wimy."
+      },
+      "play1-2":{
+        "name":"Número de wimeens: ",
+        "text":"Cuantos wimeens quieres incluir en tu wimy."
+      },
+      "play1-3":{
+        "name":"Días entre wimeens: ",
+        "text":"Cuantos días quieres esperar para agregar un nuevo wimeen a tu wimy."
+      },
+      "play2":"Después puedes agregar un nuevo wimeen a tu wimy creado.",
+      "play3":" Tienes solo dos restricciones:",
+      "play3-1":"Solo puedes ver el último wimeen.",
+      "play3-2":"Puedes agregar un nuevo wimeen después de que pase el timpo que configuraste.",
+      "play4":"Cuando termines tu wimy lo podrás compartir."
+    }
   }
 }

@@ -111,5 +111,38 @@
     "header":"Your wimy finished",
     "share":"Share anywhere",
     "text":"This is your wimy finished"
+  },
+  "tutorial":{
+    "sidebar":"Tutorial",
+    "header":"Tutorial",
+    "subheader":{
+      "exquisiteCorpse":"What is exquisite corpse?",
+      "wimy":"What is a Wimy?",
+      "wimeen":"What is a wimeen?",
+      "play":"How to play?"
+    },
+    "paragraph":{
+      "exquisiteCorpse":"Exquisite corpse is a method to make a collection of sentences using a special style to do it. Usually you can play with a group of people in a collaborative way and finally you can obtain a composition that help you for inspiring a song, poems, short histories and so many others.",
+      "wimy":"Wimy is a composition that you can do through the time. It is an exquisite corpse that you can play with yourself.",
+      "wimeen":"The wimeen is each sentence included in a wimy.",
+      "play1":"You have to create a wimy and add:",
+      "play1-1":{
+        "name":"Name:",
+        "text":"Name that you like for the wimy."
+      },
+      "play1-2":{
+        "name":"Number of wimeens: ",
+        "text":"How many wimeens you want include in your wimy."
+      },
+      "play1-3":{
+        "name":"Days between wimeens: ",
+        "text":"How many days you want wait to add a new wimeen in your wimy."
+      },
+      "play2":"Then you will can add a new wimeen in the created wimy.",
+      "play3":" You just have two restrictions:",
+      "play3-1":"You just can see the last wimeen.",
+      "play3-2":"You can add a new wimmen to wimy after the time that you set.",
+      "play4":"When you finish your wimy you will can share it."
+    }
   }
 }

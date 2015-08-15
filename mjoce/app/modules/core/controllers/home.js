@@ -24,6 +24,12 @@ angular
           $mdToast, 
           $translate,
           $mdDialog) {
+          $scope.createWimyButton=false;
+          $scope.$on('$destroy', function( event ) {
+            $scope.createWimyButton=true;
+            console.log("JSA")
+            console.log($scope.createWimyButton)
+          });
           $scope.showUpdateableToast = function(id) {
             var confirm = $mdDialog.confirm()
               .parent(angular.element(document.body))
